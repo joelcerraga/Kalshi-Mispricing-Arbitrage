@@ -40,7 +40,7 @@ The evaluation is retrospective and chronologically held out. No orders are subm
 | [Calibrating the Market’s Odds](explorers/probability/index.html) | Historical probability vectors, a temperature slider and the subsequently observed outcome |
 | [When a Basket Fails to Fill](explorers/execution/index.html) | Synthetic loss probability and expected payoff across basket discounts and fill assumptions |
 
-Each page includes a linked 2D view, static scientific preview, reset control and CSV export. Plotly is bundled with its licence. The site works offline after extracting the package; it needs no API key, analytics service or chart subscription.
+Each page includes a linked 2D view, static scientific preview, reset control and CSV export. Interactive 3D requires WebGL; if the browser cannot render it, a labelled static reference accompanies the working 2D chart and CSV export. Plotly is bundled with its licence. The site works offline after extracting the package; it needs no API key, analytics service or chart subscription.
 
 ## Reproduce the software and synthetic experiments
 

@@ -42,8 +42,11 @@ async function main(){
   check('Depth sweep arithmetic',Math.abs(f.cost([[.4,2],[.5,8]],5).vwap-.46)<1e-12);
   check('Insufficient depth rejected',f.cost([[.4,2]],3)===null);
   check('Ready state after transitions',sandbox.researchReady===true);
-  sandbox.researchWebGLAvailable=false;
+  sandbox.researchWebGLAvailable=true;
+  el('plot3d').textContent='WebGL is not supported by your browser';
+  let purged=false;sandbox.Plotly.purge=()=>{purged=true;};
   await f.render();
+  check('Renderer failure overrides successful context probe',sandbox.researchWebGLAvailable===false&&purged);
   check('WebGL fallback explicitly labelled',el('plot3d').textContent.includes('Static reference'));
   check('WebGL fallback preserves interactive 2D',el('plot2d').layout.title.text.startsWith('6 equal-price legs'));
   el('legs').value='3';await f.render();

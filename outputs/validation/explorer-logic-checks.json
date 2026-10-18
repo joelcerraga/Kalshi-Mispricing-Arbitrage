@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checks": 32,
+  "checks": 33,
   "method": "Node.js document/plot stubs; no real-browser rendering",
   "results": [
     {
@@ -113,6 +113,10 @@
     },
     {
       "name": "Ready state after transitions",
+      "passed": true
+    },
+    {
+      "name": "Renderer failure overrides successful context probe",
       "passed": true
     },
     {

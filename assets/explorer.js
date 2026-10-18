@@ -5,7 +5,7 @@ const grid=(a,b,n)=>Array.from({length:n},(_,i)=>a+(b-a)*i/(n-1));
 const fmt=(v,n=3)=>Number(v).toFixed(n);
 const base={font:{family:'Arial,sans-serif',size:11,color:colours.navy},margin:{l:50,r:20,t:40,b:55},paper_bgcolor:'#ffffff',plot_bgcolor:'#ffffff',legend:{orientation:'h',y:-.2},autosize:true};
 function titled(v){if(Array.isArray(v))return v.map(titled);if(v&&typeof v==='object')return Object.fromEntries(Object.entries(v).map(([k,x])=>[k,k==='title'&&typeof x==='string'?{text:x}:titled(x)]));return v;}
-const plot=(id,data,layout,config)=>{
+const plot=async(id,data,layout,config)=>{
  if(id==='plot3d'&&window.researchWebGLAvailable===false){
   const root=$(id);
   if(root.dataset.previewMode!==mode){
@@ -18,7 +18,14 @@ const plot=(id,data,layout,config)=>{
   }
   return Promise.resolve();
  }
- const prepared=titled(layout);if(id==='plot3d'){for(const k of ['x','y','z'])prepared.scene.camera.eye[k]*=1.25;for(const k of ['xaxis','yaxis','zaxis'])prepared.scene[k].title.font={size:11};}return Plotly.react(id,titled(data),prepared,config);
+ const prepared=titled(layout);if(id==='plot3d'){for(const k of ['x','y','z'])prepared.scene.camera.eye[k]*=1.25;for(const k of ['xaxis','yaxis','zaxis'])prepared.scene[k].title.font={size:11};}
+ await Plotly.react(id,titled(data),prepared,config);
+ // A context probe can succeed while Plotly's actual 3D renderer is unavailable.
+ if(id==='plot3d'&&/WebGL is not supported/i.test($(id).textContent)){
+  window.researchWebGLAvailable=false;
+  Plotly.purge(id);
+  return plot(id,data,layout,config);
+ }
 };
 const config={responsive:true,displaylogo:false,modeBarButtonsToRemove:['sendDataToCloud'],toImageButtonOptions:{format:'png',scale:2}};
 function options(id,values){$(id).replaceChildren(...values.map(([v,l])=>{const o=document.createElement('option');o.value=v;o.textContent=l;return o;}));}

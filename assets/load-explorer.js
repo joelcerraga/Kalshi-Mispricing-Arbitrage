@@ -24,7 +24,7 @@
       await script(prefix+'assets/explorer-data.js');
       window.researchWebGLAvailable=supportsWebGL();
       panel.hidden=false;
-      await script(prefix+'assets/explorer.js');
+      await script(prefix+'assets/explorer.js?v=20261018.2');
       await window.researchFunctions.render();
       preview.hidden=true;
       status.textContent=window.researchWebGLAvailable

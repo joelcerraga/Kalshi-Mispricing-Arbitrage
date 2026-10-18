@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7823,
-      "sha256": "e22276c4ffb2cd6b5bf26cb4f3681867feb4ea1d168951b44f3ca3afd9c31cc7"
+      "bytes": 7964,
+      "sha256": "cd64573414608527d813aee34e678cf67c3e4cf4754ca0d3234df914d6ee0db1"
     },
     {
       "path": "assets/explorer-data.js",
@@ -33,8 +33,8 @@
     },
     {
       "path": "assets/explorer.js",
-      "bytes": 12916,
-      "sha256": "7ec021382f34632ccae02ae5d106fc8f93dfa3cde5afc7e051713d044f30808e"
+      "bytes": 13175,
+      "sha256": "cad135a7c6823d3d2e44015d1e6ef31a4dd5042603080438011faf36f0c30721"
     },
     {
       "path": "assets/favicon.svg",
@@ -43,8 +43,8 @@
     },
     {
       "path": "assets/load-explorer.js",
-      "bytes": 1920,
-      "sha256": "be92a967b29114a03b528b4c4cd7f1f03d3910475c91f6ae79288b6ed7ebb775"
+      "bytes": 1933,
+      "sha256": "482bb6b549043cc740a01506d89c4dbcb83656222cb3e470a383ca7b8f256e5c"
     },
     {
       "path": "assets/previews/execution.svg",
@@ -108,33 +108,33 @@
     },
     {
       "path": "docs/research-reflections.md",
-      "bytes": 3423,
-      "sha256": "72ef1ecf19c5035b0b37a5bca33d41f5d169697ecf33e25d512459ee2800c996"
+      "bytes": 3575,
+      "sha256": "0d5a2b724ff3c9230346acb43f6aa2ff9f3800cd8cab02f3a0e3ec0dfc63fcd4"
     },
     {
       "path": "explorers/execution/index.html",
-      "bytes": 7557,
-      "sha256": "c3fb75f3fa2dc37b7b3ba117cb076165bceb5023394c785a542d399300b78e3e"
+      "bytes": 7583,
+      "sha256": "31272771df11063a6a0fc0d30ed6fca94ab8e1f2ba9e7c59ea392d322114f790"
     },
     {
       "path": "explorers/index.html",
-      "bytes": 6467,
-      "sha256": "4b0520b3e2e9f536ffb580c828599ec4f3bcd2c5f3650586d18a8592052a2b3a"
+      "bytes": 6480,
+      "sha256": "f1011731675fdd31e5f9c038ad3faf2e009da0793405daaa1947435d49f3bd8e"
     },
     {
       "path": "explorers/liquidity/index.html",
-      "bytes": 7496,
-      "sha256": "120f89b94f5d5eedf8cf1196454a6ba0cace7c0f1c1d7ef92cf8538e2a2f6ff8"
+      "bytes": 7522,
+      "sha256": "6c100559adeef4469eba4da10eb111460f15dd9a3880c99e55fd5912d3af53e7"
     },
     {
       "path": "explorers/probability/index.html",
-      "bytes": 7568,
-      "sha256": "12baca434bb5cb1ed0e4a7daa5ab155264fbb1532f5b56d5dc6b26cb0ad8d0fb"
+      "bytes": 7594,
+      "sha256": "87b54f5381b236516008db81204694f2017f71a00700c4a9edb5431b2c692cc3"
     },
     {
       "path": "index.html",
-      "bytes": 11908,
-      "sha256": "dbb7551454b70500e5452333fea5820e299405e63ba3e4600cd8b37a7349985f"
+      "bytes": 11921,
+      "sha256": "4903bd18b6a70309398801fb1181370ab8db1dd7b224ac9a1239ba9526b88d33"
     },
     {
       "path": "kalshi_engine/__init__.py",
@@ -208,8 +208,8 @@
     },
     {
       "path": "notebooks/index.html",
-      "bytes": 7036,
-      "sha256": "994f09193d32f9e411b4b9e5d3ea973fa5440aa9c1427a4319641ea7d2639ee8"
+      "bytes": 7049,
+      "sha256": "8f7b2f3b67e42d163df1e4ef1f4818b9ee188d6f70ccf2b95d1abee5e7258f4e"
     },
     {
       "path": "outputs/live-results.json",
@@ -268,8 +268,8 @@
     },
     {
       "path": "outputs/validation/explorer-logic-checks.json",
-      "bytes": 2605,
-      "sha256": "ed78a7006e20869e88969884449fef93a5a49a6607cdd1f5b46fd5df9f0a2da2"
+      "bytes": 2708,
+      "sha256": "d51af13d69d9fd620bcc313160a43ca114e3c19ffb6ba7e97ef62cf5784283d6"
     },
     {
       "path": "outputs/validation/notebook-execution.json",
@@ -803,8 +803,8 @@
     },
     {
       "path": "scripts/build_site.py",
-      "bytes": 21127,
-      "sha256": "435cf876260b8af21e61d264cf6449ce096a5f2c5bf997709631493018efd5ca"
+      "bytes": 21153,
+      "sha256": "803b4ac629ea30e79340b8435dfadb38702e65e20f3c5a490e3931a92137cbee"
     },
     {
       "path": "scripts/package_release.py",
@@ -838,8 +838,8 @@
     },
     {
       "path": "scripts/verify_explorers.cjs",
-      "bytes": 5312,
-      "sha256": "ec90a0cc9c11833cd7897730a47561170a45902b8fbf972db29d9d47e8f96fcb"
+      "bytes": 5551,
+      "sha256": "f9fa74b0aebf4957687f591337f211d658b98831652249d55197cb32c4bac380"
     },
     {
       "path": "scripts/verify_release.py",
