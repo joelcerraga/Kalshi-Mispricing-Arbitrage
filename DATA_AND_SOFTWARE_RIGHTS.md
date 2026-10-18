@@ -1,6 +1,6 @@
 # Publication scope
 
-The project owner confirmed that publication permission had been obtained on 18 October 2026. This release follows the scope of the research permission request: the paper, original code, executed notebook outputs, derived empirical summaries, and selected historical quote, order-book and probability data used by the interactive graphs. The permission correspondence itself is not included in this repository.
+I acquired publication permission on 18 October 2026. This release follows the scope of the research permission request: the paper, original code, executed notebook outputs, derived empirical summaries, and selected historical quote, order-book and probability data used by the interactive graphs. The permission correspondence itself is not included in this repository.
 
 The complete raw API response cache, full processed historical panel, private research archive and permission-request draft are excluded from this public repository and its Git history. They remain in separate private storage. Public endpoint accessibility should not be interpreted as a general redistribution licence.
 
