@@ -1,0 +1,25 @@
+{
+  "temperature": 1.034401365772857,
+  "development_log_loss": 0.9560921558443619,
+  "frozen_utc": "2026-10-17T20:41:16.189207+00:00",
+  "chosen_temperature": 1.0,
+  "validation_baseline_loss": 0.8138029332204252,
+  "validation_candidate_loss": 0.81904274320459,
+  "development_events": 162,
+  "validation_events": 53,
+  "feature_hash": "659a3a9f6496c99cb969f287101a7d4c56f028a3e00c69325fd379c10e34c18c",
+  "protocol_hash": "34f3f75557f5cf84331df03941b282f14f5d3ff40b844d0903794c4bfd2e53ff",
+  "selection": "minimum validation multiclass log loss; baseline wins ties",
+  "eps": 0.0001,
+  "temperature_bounds": [
+    0.25,
+    4
+  ],
+  "test_scores_inspected": false,
+  "implementation_hashes": {
+    "kalshi_engine/probability.py": "fbc6d6ada42ab3c982ae60ea5c2c08f1faf23684c4a26edb06d0ce929bf1abaf",
+    "scripts/analyse.py": "9520c35811dafb04d2c6f638e8fe4e06fcac72841c38600afb166f1f548ea40e",
+    "protocol/A01_api_and_contract_audit.md": "4111e35ffe18be9770a9c87a9bd294ffaf829a57d75f92cf996856459e0292bf"
+  },
+  "prediction_hash": "ce2b9bfb620ff5bf12d027f13d72f1f54831284b8443cf6d8b2a5c9b83bcb83f"
+}

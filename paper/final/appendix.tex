@@ -1,0 +1,53 @@
+\chapterstart{Reproducibility and implementation}\label{app:reproducibility}
+\subsection{Notebook sequence and recorded inputs}
+Table~\ref{tab:notebooks} maps the executed notebooks to the research stages. The notebooks contain 31 executed code cells in total, with mathematical exposition, tables and figures retained alongside their calculations. The HTML research review provides an accessible reading route and downloads of the individual notebook files.
+
+\paperTable{notebooks}
+
+The project requires Python 3.12 or later and the pinned NumPy, pandas, SciPy and Matplotlib dependencies in \texttt{requirements.txt}. From the project root, \texttt{python scripts/reproduce.py} verifies retained hashes, executes the analytical tests and recreates the derived outputs and notebooks from the saved sample. It issues no new network requests. The optional \texttt{--web} flag also rebuilds the offline HTML pages using the recorded Node.js dependencies.
+
+The scanner defaults to the final recorded observation. Run \texttt{python} on \nolinkurl{scripts/scan.py} with the options \texttt{--series KXHIGHNY} and \texttt{--quantity 10} for a reproducible scan of ten contracts per basket leg. A separate live option exists for a new permitted public observation; it is not invoked during paper compilation. The current historical collector is configured for the bounded 90-date research window, not an unrestricted future backtest.
+
+The model freeze was recorded at 20:41:16.189 UTC on 17 October 2026, before the later score calculation. It identifies the development fit, validation decision, feature hash, prediction hash and analytical implementation hashes. The prediction file's SHA-256 digest is
+\begin{center}\fontsize{9.3}{11.5}\selectfont
+\nolinkurl{ce2b9bfb620ff5bf12d027f13d72f1f54831284b8443cf6d8b2a5c9b83bcb83f}
+\end{center}
+The paper builder checks the analytical freeze and reads existing outputs. It does not reacquire data, refit the temperature parameter, change the selection rule or replace the retained predictions. The paper source package contains the typesetting files and vector exhibits needed to compile the document independently of model estimation.
+
+\subsection{Fee calculation excerpt}
+Code listing~\ref{code:fee} is extracted from the implemented fee routine. It assumes the caller has supplied an ordered sequence of fills and a fee policy. Decimal helpers and policy definitions remain in the accompanying Python module. The recurrence preserves the distinction between the trade fee, balance rounding and an order-level rebate accumulator.
+
+\input{generated/code-fee.tex}
+
+The assumed fill sequence remains an input to this calculation. Aggregated public depth does not disclose how many counterparties would fill an order. The implementation can compare fill-granularity scenarios but cannot infer the hidden matching sequence. This is why a deterministic fee routine does not by itself make the observed book an executable backtest.
+
+\subsection{Statewise optimisation excerpt}
+Code listing~\ref{code:portfolio} implements the finite-state linear programme. Rows of the supplied matrix represent coherent underlying states, and columns represent positions. The objective is the lowest statewise net payoff under a cost budget and displayed quantity bounds. A numerical check verifies the solver's claimed minimum against the resulting state payoffs.
+
+\input{generated/code-portfolio.tex}
+
+The live analysis subsequently floors quantities and recomputes costs using the depth and fee routines. That recheck is separate from this continuous optimisation function. Settlement contingencies and non-simultaneous observations are also evaluated outside the numerical solver; they cannot be inferred from an optimisation success flag.
+
+\subsection{Chronological calibration excerpt}
+Code listing~\ref{code:calibration} fits the single temperature parameter using only the supplied development events. Validation selection is performed separately, and the resulting prediction file is frozen before later scores are calculated.
+
+\input{generated/code-calibration.tex}
+
+The log-temperature parameterisation ensures positivity within the fixed bounds. The objective is the mean logarithmic score, with no later-period outcome passed to the fitting function. The wider pipeline remains retrospective because the source history was acquired after the events; function-level separation is a reproducibility measure rather than proof of prospective blinding.
+
+\chapterstart{Interactive research explorers}\label{app:explorers}
+\subsection{Recorded liquidity in three dimensions}
+The offline \texttt{interactive-explorers.html} file provides three views and CSV exports. Its liquidity view plots ask price, elapsed collection time and cumulative quantity, alongside two-dimensional acquisition costs. Figure~\ref{fig:11} uses the same saved observations. The default contract is selected by its final midpoint's distance from 0.50. Lines join price levels within snapshots, not trades or unobserved orders between snapshots.
+
+\paperFig{11}
+
+\subsection{Calibration sensitivity}
+The probability explorer varies temperature for a historical event, with axes for outcome rank, temperature and transformed probability. A companion chart compares the baseline with the slider setting and marks the subsequent winner. Figure~\ref{fig:12} uses the first later-period New York event. The slider explores sensitivity; it neither refits a model nor revises the selected $T=1$.
+
+\paperFig{12}
+
+\subsection{Synthetic basket execution}
+The synthetic laboratory varies basket discount, legs and fill probability under an exhaustive single-winner partition, independent fills and raw fees. Figure~\ref{fig:13} sums binomial fill probabilities and the chance that the winning leg is absent. Its threshold reflects fees consuming the margin. The companion chart separates expected payoff from loss probability. Settlement exceptions, correlated fills, funding and dynamic hedging are excluded.
+
+\paperFig{13}
+

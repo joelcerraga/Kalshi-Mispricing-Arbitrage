@@ -1,0 +1,52 @@
+[
+  {
+    "number": 1,
+    "file": "outputs/figures/01_coverage.png",
+    "caption": "Coverage of complete six-contract panels at 12:00 local time; peach indicates an excluded event."
+  },
+  {
+    "number": 2,
+    "file": "outputs/figures/02_spreads.png",
+    "caption": "Historical spreads from accepted noon events. Candle-close quotes have no accompanying depth or fill guarantee."
+  },
+  {
+    "number": 3,
+    "file": "outputs/figures/03_coherence.png",
+    "caption": "Conditional integer-resolution basket gaps from hourly quotes; current fee scenarios do not establish historical execution or contractual arbitrage."
+  },
+  {
+    "number": 4,
+    "file": "outputs/figures/04_scores.png",
+    "caption": "Held-out scores for the market-derived baseline and the rejected calibration candidate. Lower is better; validation selected the baseline."
+  },
+  {
+    "number": 5,
+    "file": "outputs/figures/05_reliability.png",
+    "caption": "Pooled reliability bins on held-out events. Contracts within an event are dependent; this curve is descriptive, not an independent-bin significance test."
+  },
+  {
+    "number": 6,
+    "file": "outputs/figures/06_depth_cost.png",
+    "caption": "Displayed-depth purchase costs for the final snapshot whose midpoint is nearest 0.50; the selection rule is descriptive and does not use future returns."
+  },
+  {
+    "number": 7,
+    "file": "outputs/figures/07_imbalance.png",
+    "caption": "Snapshot imbalance and the next observed midpoint change in the brief live session; these are not order-flow events or independent trading trials."
+  },
+  {
+    "number": 8,
+    "file": "outputs/figures/08_synthetic.png",
+    "caption": "Six synthetic mechanisms, 500 replications each. Passing known-truth tests verifies selected logic, not real-market profitability."
+  },
+  {
+    "number": 9,
+    "file": "outputs/figures/09_execution_stress.png",
+    "caption": "Synthetic independent leg-fill stresses. A positive expected payoff can coexist with losses when an incomplete basket remains exposed."
+  },
+  {
+    "number": 10,
+    "file": "outputs/figures/10_block_sensitivity.png",
+    "caption": "Paired date-block confidence intervals for the rejected candidate on later dates; negative differences favour the candidate. The selected method is the baseline itself."
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "scenarios": 6,
+  "replications_per_scenario": 500,
+  "scenario_evaluations": 3000,
+  "all_checks_passed": true,
+  "stress_scenarios": 20,
+  "draws_per_fill_setting": 20000,
+  "paired_draws_across_costs": true,
+  "seed": 20261017
+}

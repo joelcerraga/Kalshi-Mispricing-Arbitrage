@@ -1,0 +1,105 @@
+{
+  "checks": [
+    {
+      "name": "Twenty empirical 3D depth curves",
+      "pass": true
+    },
+    {
+      "name": "Scientific axes labelled",
+      "pass": true
+    },
+    {
+      "name": "Default summary contains no infinite spread",
+      "pass": true
+    },
+    {
+      "name": "One-sided book has an explicit missing spread",
+      "pass": true
+    },
+    {
+      "name": "Contract selection changes caption",
+      "pass": true
+    },
+    {
+      "name": "Calibration surface renders",
+      "pass": true
+    },
+    {
+      "name": "Calibration axes labelled",
+      "pass": true
+    },
+    {
+      "name": "Calibration values sum to one",
+      "pass": true
+    },
+    {
+      "name": "Temperature updates",
+      "pass": true
+    },
+    {
+      "name": "Execution surface probabilities valid",
+      "pass": true
+    },
+    {
+      "name": "Full fill profitable basket has no synthetic loss",
+      "pass": true
+    },
+    {
+      "name": "No-discount fully acquired basket loses after fees",
+      "pass": true
+    },
+    {
+      "name": "Incomplete fill can lose despite positive expectation",
+      "pass": true
+    },
+    {
+      "name": "CSV export contains plotted data",
+      "pass": true
+    },
+    {
+      "name": "Explorer mobile width fits",
+      "pass": true
+    },
+    {
+      "name": "Eight notebook sections",
+      "pass": true
+    },
+    {
+      "name": "MathJax rendered equations",
+      "pass": true
+    },
+    {
+      "name": "No equation parse errors",
+      "pass": true
+    },
+    {
+      "name": "Review mobile width fits",
+      "pass": true
+    },
+    {
+      "name": "Expanded review mobile width fits",
+      "pass": true
+    },
+    {
+      "name": "Captions are centred",
+      "pass": true
+    },
+    {
+      "name": "Downloaded notebook retains executed cells",
+      "pass": true
+    },
+    {
+      "name": "No page JavaScript errors",
+      "pass": true
+    },
+    {
+      "name": "Self-contained pages make no external requests",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "external_requests": [],
+  "passed": true,
+  "browser": "local headless Chromium; software WebGL",
+  "executed_utc": "2026-10-17T21:00:24.381Z"
+}

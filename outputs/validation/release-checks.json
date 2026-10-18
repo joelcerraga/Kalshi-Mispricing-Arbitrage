@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "html_pages": 6,
+  "internal_links_checked": 127,
+  "distinct_page_titles": true,
+  "separate_social_thumbnails": [
+    {
+      "file": "assets/thumbnails/pricing-uncertainty.jpg",
+      "bytes": 159736,
+      "dimensions": [
+        1774,
+        887
+      ]
+    },
+    {
+      "file": "assets/thumbnails/probability-in-motion.jpg",
+      "bytes": 197907,
+      "dimensions": [
+        1774,
+        887
+      ]
+    }
+  ],
+  "final_paper_pages": 39,
+  "final_paper_unchanged": true,
+  "notebooks": 8,
+  "executed_cells": 31,
+  "book_observations": 720,
+  "probability_vectors": 268,
+  "frozen_implementation_hashes_verified": 3,
+  "full_source_cache_included": false,
+  "real_browser_review_completed": false,
+  "publication_status": "approved_public_release"
+}

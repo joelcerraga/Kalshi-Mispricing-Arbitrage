@@ -1,0 +1,14 @@
+{
+  "method": "Built-in image generation",
+  "purpose": "Conceptual cover images; not measured research figures",
+  "prompts": [
+    [
+      "landing",
+      "Use case: ads-marketing. Create a polished website and social-preview thumbnail for Joel Cerraga's Kalshi prediction-market research, matching his established scientific portfolio: pure white background, deep navy modern sans-serif typography, restrained teal/cyan three-dimensional geometry, one thin warm-gold accent. Wide 2:1 composition, generous safe margins. Left half: small upper label \"QUANTITATIVE RESEARCH\"; large bold stacked exact title \"PRICING\" and \"UNCERTAINTY\"; smaller subtitle \"Probability. Liquidity. Arbitrage.\"; bottom-left credit \"Joel Cerraga\". Right half: elegant translucent teal stepped order-book-like blocks blending into a smooth probability-shaped ridge, on a very faint perspective grid, one fine gold line across it. Conceptual decorative artwork only, no measured axes or numeric data, no performance claims, no logos, no dark background. Crisp editorial financial research identity; all lettering readable at thumbnail size and fully in frame."
+    ],
+    [
+      "graphs",
+      "Use case: ads-marketing. Create a polished website and social-preview thumbnail for the separate interactive graphs page of Joel Cerraga's Kalshi microstructure research. Match an established white/navy/teal quantitative-research portfolio. Wide 2:1 composition with generous safe margins, pure white background. Left half exact text: small upper label \"PREDICTION MARKET RESEARCH\"; large bold stacked modern sans-serif title \"PROBABILITY\" and \"IN MOTION\"; smaller subtitle \"Interactive 3D Explorers\"; bottom-left credit \"Joel Cerraga\". Right half: elegant overlapping translucent teal probability surfaces and thin order-book-like steps in perspective, with one fine gold trajectory. Restrained cyan highlights, lots of white negative space, crisp professional editorial style. Decorative conceptual geometry only, not measured data; no axis numbers, no profit claims, no logos, no dark background. Keep all typography completely in frame and legible at small size."
+    ]
+  ]
+}

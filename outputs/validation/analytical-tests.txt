@@ -1,0 +1,50 @@
+test_actual_temperature_partition_gap (test_engine.EngineTests.test_actual_temperature_partition_gap) ... ok
+test_bids_sorted (test_engine.EngineTests.test_bids_sorted) ... ok
+test_block_constant (test_engine.EngineTests.test_block_constant) ... ok
+test_calibration_recovery (test_engine.EngineTests.test_calibration_recovery) ... ok
+test_cent_precision (test_engine.EngineTests.test_cent_precision) ... ok
+test_complement_ask (test_engine.EngineTests.test_complement_ask) ... ok
+test_crossed_rejected (test_engine.EngineTests.test_crossed_rejected) ... ok
+test_depth_sweep (test_engine.EngineTests.test_depth_sweep) ... ok
+test_direct_precision (test_engine.EngineTests.test_direct_precision) ... ok
+test_duplicates_aggregate (test_engine.EngineTests.test_duplicates_aggregate) ... ok
+test_empty_not_zero_price (test_engine.EngineTests.test_empty_not_zero_price) ... ok
+test_exception_blocks (test_engine.EngineTests.test_exception_blocks) ... ok
+test_expected_edge_not_guarantee (test_engine.EngineTests.test_expected_edge_not_guarantee) ... ok
+test_fee_erased_gap (test_engine.EngineTests.test_fee_erased_gap) ... ok
+test_fee_half_price (test_engine.EngineTests.test_fee_half_price) ... ok
+test_fee_multiplier (test_engine.EngineTests.test_fee_multiplier) ... ok
+test_fractional_depth (test_engine.EngineTests.test_fractional_depth) ... ok
+test_full_precision_gap_state (test_engine.EngineTests.test_full_precision_gap_state) ... ok
+test_gap (test_engine.EngineTests.test_gap) ... ok
+test_imbalance (test_engine.EngineTests.test_imbalance) ... ok
+test_insufficient_no_partial_success (test_engine.EngineTests.test_insufficient_no_partial_success) ... ok
+test_invalid_numbers (test_engine.EngineTests.test_invalid_numbers) ... ok
+test_invalid_side (test_engine.EngineTests.test_invalid_side) ... ok
+test_lp_known_solution (test_engine.EngineTests.test_lp_known_solution) ... ok
+test_lp_missing_state (test_engine.EngineTests.test_lp_missing_state) ... ok
+test_lp_no_opportunity (test_engine.EngineTests.test_lp_no_opportunity) ... ok
+test_midpoint_gap_not_arb (test_engine.EngineTests.test_midpoint_gap_not_arb) ... ok
+test_no_basket_payout (test_engine.EngineTests.test_no_basket_payout) ... ok
+test_non_exhaustive (test_engine.EngineTests.test_non_exhaustive) ... ok
+test_normalise (test_engine.EngineTests.test_normalise) ... ok
+test_overlap (test_engine.EngineTests.test_overlap) ... ok
+test_partition (test_engine.EngineTests.test_partition) ... ok
+test_quantity_positive (test_engine.EngineTests.test_quantity_positive) ... ok
+test_random_coherent_false_positives (test_engine.EngineTests.test_random_coherent_false_positives) ... ok
+test_rounding_accumulator (test_engine.EngineTests.test_rounding_accumulator) ... ok
+test_scalar_warning (test_engine.EngineTests.test_scalar_warning) ... ok
+test_scores_perfect (test_engine.EngineTests.test_scores_perfect) ... ok
+test_skew_blocks (test_engine.EngineTests.test_skew_blocks) ... ok
+test_temperature_identity (test_engine.EngineTests.test_temperature_identity) ... ok
+test_temperature_order (test_engine.EngineTests.test_temperature_order) ... ok
+test_true_basket (test_engine.EngineTests.test_true_basket) ... ok
+test_unknown_fee_fail_closed (test_engine.EngineTests.test_unknown_fee_fail_closed) ... ok
+test_unverified_blocks (test_engine.EngineTests.test_unverified_blocks) ... ok
+test_wrong_event (test_engine.EngineTests.test_wrong_event) ... ok
+test_zero_fees (test_engine.EngineTests.test_zero_fees) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.349s
+
+OK

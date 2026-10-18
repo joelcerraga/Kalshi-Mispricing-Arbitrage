@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "checks": 28,
+  "method": "Node.js document/plot stubs; no real-browser rendering",
+  "results": [
+    {
+      "name": "Twenty depth traces",
+      "passed": true
+    },
+    {
+      "name": "Depth axis title",
+      "passed": true
+    },
+    {
+      "name": "Default summary finite",
+      "passed": true
+    },
+    {
+      "name": "One-sided spread unavailable",
+      "passed": true
+    },
+    {
+      "name": "Book mode visible selector",
+      "passed": true
+    },
+    {
+      "name": "Probability mode controls",
+      "passed": true
+    },
+    {
+      "name": "Probability surface",
+      "passed": true
+    },
+    {
+      "name": "Probability rows normalised",
+      "passed": true
+    },
+    {
+      "name": "Slider temperature 0.25",
+      "passed": true
+    },
+    {
+      "name": "Slider temperature 1",
+      "passed": true
+    },
+    {
+      "name": "Slider temperature 4",
+      "passed": true
+    },
+    {
+      "name": "Identity calibration",
+      "passed": true
+    },
+    {
+      "name": "Low temperature concentrates",
+      "passed": true
+    },
+    {
+      "name": "High temperature flattens",
+      "passed": true
+    },
+    {
+      "name": "Calibration reset",
+      "passed": true
+    },
+    {
+      "name": "Synthetic mode controls",
+      "passed": true
+    },
+    {
+      "name": "Loss surface bounded",
+      "passed": true
+    },
+    {
+      "name": "Full basket cost",
+      "passed": true
+    },
+    {
+      "name": "Full basket expected payoff",
+      "passed": true
+    },
+    {
+      "name": "Full discounted basket no loss",
+      "passed": true
+    },
+    {
+      "name": "No discount loses fees on full fill",
+      "passed": true
+    },
+    {
+      "name": "No fills means zero payout and loss",
+      "passed": true
+    },
+    {
+      "name": "Independent full-fill probability",
+      "passed": true
+    },
+    {
+      "name": "Eight-leg redraw",
+      "passed": true
+    },
+    {
+      "name": "Laboratory reset",
+      "passed": true
+    },
+    {
+      "name": "Depth sweep arithmetic",
+      "passed": true
+    },
+    {
+      "name": "Insufficient depth rejected",
+      "passed": true
+    },
+    {
+      "name": "Ready state after transitions",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+\begin{table}[htbp]\centering
+{\fontsize{9.6}{12}\selectfont\renewcommand{\arraystretch}{1.18}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}L{64mm}L{33mm}X@{}}\toprule\rowcolor{tablehead}
+\textbf{Object} & \textbf{Count or estimate} & \textbf{Meaning} \\ \midrule
+Batch responses / duration & 20 / 166.12 s & One short collection session on 17 October 2026. \\ \arrayrulecolor{tablerule}\hline
+Individual books & 720 & 36 contracts across 6 events, observed 20 times. \\ \arrayrulecolor{tablerule}\hline
+Two-sided / one-sided books & 406 / 314 & Spread summaries use the two-sided subset. \\ \arrayrulecolor{tablerule}\hline
+Median spread & 1.00 cent & Displayed spread, not an executed transaction cost. \\ \arrayrulecolor{tablerule}\hline
+Median request span & 5.307 s & HTTP collection span, not exchange latency. \\ \arrayrulecolor{tablerule}\hline
+Complete basket-side-size checks & 378 of 720 & Enough displayed depth; none has a positive net gap. \\ \arrayrulecolor{tablerule}\hline
+Checks rejected for depth & 342 of 720 & At least one leg cannot supply the required size. \\ \arrayrulecolor{tablerule}\hline
+Statewise portfolio checks & 46 & Complete two-sided event observations; no positive solution. \\ \arrayrulecolor{tablerule}\hline
+\arrayrulecolor{black}\bottomrule\end{tabularx}}
+\caption[Recorded live-pilot audit]{Recorded live-pilot audit.}\label{tab:live}
+\vspace{2pt}{\centering\fontsize{9.3}{11.5}\selectfont The 720 individual books and 720 basket checks are different denominators. Basket checks use two sides and three quantities per event per round.\par}
+\end{table}

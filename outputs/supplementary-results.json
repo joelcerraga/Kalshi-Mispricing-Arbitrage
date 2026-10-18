@@ -1,0 +1,15 @@
+{
+  "historical_noon_events": 268,
+  "gross_positive_quote_baskets": 34,
+  "net_positive_current_fee_scenario": 0,
+  "source_snapshots": 521,
+  "parallel_manifest_missing_entries": 1,
+  "recovered_index_files": [
+    "data/raw/48ecc1ee933a6c5a4deecc50-20261017T203126960801.json"
+  ],
+  "book_payload_hashes": 20,
+  "integer_partition_events": 276,
+  "continuous_partition_events": 0,
+  "snapshot_imbalance_correlation": 0.035499502460266945,
+  "interpretation": "Historical current-fee scenarios and short-session imbalance are descriptive; no fill or causal identification."
+}

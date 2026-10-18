@@ -1,0 +1,811 @@
+event,series,date,hour,phase,status,source
+KXHIGHNY-26AUG01,KXHIGHNY,2026-08-01,9,development,accepted,NWS
+KXHIGHNY-26AUG01,KXHIGHNY,2026-08-01,12,development,accepted,NWS
+KXHIGHNY-26AUG01,KXHIGHNY,2026-08-01,15,development,accepted,NWS
+KXHIGHNY-26AUG02,KXHIGHNY,2026-08-02,9,development,accepted,NWS
+KXHIGHNY-26AUG02,KXHIGHNY,2026-08-02,12,development,accepted,NWS
+KXHIGHNY-26AUG02,KXHIGHNY,2026-08-02,15,development,accepted,NWS
+KXHIGHNY-26AUG03,KXHIGHNY,2026-08-03,9,development,accepted,NWS
+KXHIGHNY-26AUG03,KXHIGHNY,2026-08-03,12,development,accepted,NWS
+KXHIGHNY-26AUG03,KXHIGHNY,2026-08-03,15,development,accepted,NWS
+KXHIGHNY-26AUG04,KXHIGHNY,2026-08-04,9,development,accepted,NWS
+KXHIGHNY-26AUG04,KXHIGHNY,2026-08-04,12,development,accepted,NWS
+KXHIGHNY-26AUG04,KXHIGHNY,2026-08-04,15,development,accepted,NWS
+KXHIGHNY-26AUG05,KXHIGHNY,2026-08-05,9,development,accepted,NWS
+KXHIGHNY-26AUG05,KXHIGHNY,2026-08-05,12,development,accepted,NWS
+KXHIGHNY-26AUG05,KXHIGHNY,2026-08-05,15,development,accepted,NWS
+KXHIGHNY-26AUG06,KXHIGHNY,2026-08-06,9,development,accepted,NWS
+KXHIGHNY-26AUG06,KXHIGHNY,2026-08-06,12,development,accepted,NWS
+KXHIGHNY-26AUG06,KXHIGHNY,2026-08-06,15,development,accepted,NWS
+KXHIGHNY-26AUG07,KXHIGHNY,2026-08-07,9,development,accepted,NWS
+KXHIGHNY-26AUG07,KXHIGHNY,2026-08-07,12,development,accepted,NWS
+KXHIGHNY-26AUG07,KXHIGHNY,2026-08-07,15,development,accepted,NWS
+KXHIGHNY-26AUG08,KXHIGHNY,2026-08-08,9,development,accepted,NWS
+KXHIGHNY-26AUG08,KXHIGHNY,2026-08-08,12,development,accepted,NWS
+KXHIGHNY-26AUG08,KXHIGHNY,2026-08-08,15,development,accepted,NWS
+KXHIGHNY-26AUG09,KXHIGHNY,2026-08-09,9,development,accepted,NWS
+KXHIGHNY-26AUG09,KXHIGHNY,2026-08-09,12,development,accepted,NWS
+KXHIGHNY-26AUG09,KXHIGHNY,2026-08-09,15,development,accepted,NWS
+KXHIGHNY-26AUG10,KXHIGHNY,2026-08-10,9,development,accepted,NWS
+KXHIGHNY-26AUG10,KXHIGHNY,2026-08-10,12,development,accepted,NWS
+KXHIGHNY-26AUG10,KXHIGHNY,2026-08-10,15,development,accepted,NWS
+KXHIGHNY-26AUG11,KXHIGHNY,2026-08-11,9,development,accepted,NWS
+KXHIGHNY-26AUG11,KXHIGHNY,2026-08-11,12,development,accepted,NWS
+KXHIGHNY-26AUG11,KXHIGHNY,2026-08-11,15,development,accepted,NWS
+KXHIGHNY-26AUG12,KXHIGHNY,2026-08-12,9,development,accepted,NWS
+KXHIGHNY-26AUG12,KXHIGHNY,2026-08-12,12,development,accepted,NWS
+KXHIGHNY-26AUG12,KXHIGHNY,2026-08-12,15,development,accepted,NWS
+KXHIGHNY-26AUG13,KXHIGHNY,2026-08-13,9,development,accepted,NWS
+KXHIGHNY-26AUG13,KXHIGHNY,2026-08-13,12,development,accepted,NWS
+KXHIGHNY-26AUG13,KXHIGHNY,2026-08-13,15,development,accepted,NWS
+KXHIGHNY-26AUG14,KXHIGHNY,2026-08-14,9,development,accepted,Weather Company
+KXHIGHNY-26AUG14,KXHIGHNY,2026-08-14,12,development,accepted,Weather Company
+KXHIGHNY-26AUG14,KXHIGHNY,2026-08-14,15,development,accepted,Weather Company
+KXHIGHNY-26AUG15,KXHIGHNY,2026-08-15,9,development,accepted,Weather Company
+KXHIGHNY-26AUG15,KXHIGHNY,2026-08-15,12,development,accepted,Weather Company
+KXHIGHNY-26AUG15,KXHIGHNY,2026-08-15,15,development,accepted,Weather Company
+KXHIGHNY-26AUG16,KXHIGHNY,2026-08-16,9,development,accepted,Weather Company
+KXHIGHNY-26AUG16,KXHIGHNY,2026-08-16,12,development,accepted,Weather Company
+KXHIGHNY-26AUG16,KXHIGHNY,2026-08-16,15,development,accepted,Weather Company
+KXHIGHNY-26AUG17,KXHIGHNY,2026-08-17,9,development,accepted,Weather Company
+KXHIGHNY-26AUG17,KXHIGHNY,2026-08-17,12,development,accepted,Weather Company
+KXHIGHNY-26AUG17,KXHIGHNY,2026-08-17,15,development,accepted,Weather Company
+KXHIGHNY-26AUG18,KXHIGHNY,2026-08-18,9,development,accepted,Weather Company
+KXHIGHNY-26AUG18,KXHIGHNY,2026-08-18,12,development,accepted,Weather Company
+KXHIGHNY-26AUG18,KXHIGHNY,2026-08-18,15,development,accepted,Weather Company
+KXHIGHNY-26AUG19,KXHIGHNY,2026-08-19,9,development,accepted,Weather Company
+KXHIGHNY-26AUG19,KXHIGHNY,2026-08-19,12,development,accepted,Weather Company
+KXHIGHNY-26AUG19,KXHIGHNY,2026-08-19,15,development,accepted,Weather Company
+KXHIGHNY-26AUG20,KXHIGHNY,2026-08-20,9,development,accepted,Weather Company
+KXHIGHNY-26AUG20,KXHIGHNY,2026-08-20,12,development,accepted,Weather Company
+KXHIGHNY-26AUG20,KXHIGHNY,2026-08-20,15,development,accepted,Weather Company
+KXHIGHNY-26AUG21,KXHIGHNY,2026-08-21,9,development,accepted,Weather Company
+KXHIGHNY-26AUG21,KXHIGHNY,2026-08-21,12,development,accepted,Weather Company
+KXHIGHNY-26AUG21,KXHIGHNY,2026-08-21,15,development,accepted,Weather Company
+KXHIGHNY-26AUG22,KXHIGHNY,2026-08-22,9,development,accepted,Weather Company
+KXHIGHNY-26AUG22,KXHIGHNY,2026-08-22,12,development,accepted,Weather Company
+KXHIGHNY-26AUG22,KXHIGHNY,2026-08-22,15,development,accepted,Weather Company
+KXHIGHNY-26AUG23,KXHIGHNY,2026-08-23,9,development,accepted,Weather Company
+KXHIGHNY-26AUG23,KXHIGHNY,2026-08-23,12,development,accepted,Weather Company
+KXHIGHNY-26AUG23,KXHIGHNY,2026-08-23,15,development,accepted,Weather Company
+KXHIGHNY-26AUG24,KXHIGHNY,2026-08-24,9,development,accepted,Weather Company
+KXHIGHNY-26AUG24,KXHIGHNY,2026-08-24,12,development,accepted,Weather Company
+KXHIGHNY-26AUG24,KXHIGHNY,2026-08-24,15,development,accepted,Weather Company
+KXHIGHNY-26AUG25,KXHIGHNY,2026-08-25,9,development,accepted,Weather Company
+KXHIGHNY-26AUG25,KXHIGHNY,2026-08-25,12,development,accepted,Weather Company
+KXHIGHNY-26AUG25,KXHIGHNY,2026-08-25,15,development,accepted,Weather Company
+KXHIGHNY-26AUG26,KXHIGHNY,2026-08-26,9,development,accepted,Weather Company
+KXHIGHNY-26AUG26,KXHIGHNY,2026-08-26,12,development,accepted,Weather Company
+KXHIGHNY-26AUG26,KXHIGHNY,2026-08-26,15,development,accepted,Weather Company
+KXHIGHNY-26AUG27,KXHIGHNY,2026-08-27,9,development,accepted,Weather Company
+KXHIGHNY-26AUG27,KXHIGHNY,2026-08-27,12,development,accepted,Weather Company
+KXHIGHNY-26AUG27,KXHIGHNY,2026-08-27,15,development,missing_exact_completed_hour,Weather Company
+KXHIGHNY-26AUG28,KXHIGHNY,2026-08-28,9,development,accepted,Weather Company
+KXHIGHNY-26AUG28,KXHIGHNY,2026-08-28,12,development,accepted,Weather Company
+KXHIGHNY-26AUG28,KXHIGHNY,2026-08-28,15,development,accepted,Weather Company
+KXHIGHNY-26AUG29,KXHIGHNY,2026-08-29,9,development,accepted,Weather Company
+KXHIGHNY-26AUG29,KXHIGHNY,2026-08-29,12,development,accepted,Weather Company
+KXHIGHNY-26AUG29,KXHIGHNY,2026-08-29,15,development,accepted,Weather Company
+KXHIGHNY-26AUG30,KXHIGHNY,2026-08-30,9,development,accepted,Weather Company
+KXHIGHNY-26AUG30,KXHIGHNY,2026-08-30,12,development,accepted,Weather Company
+KXHIGHNY-26AUG30,KXHIGHNY,2026-08-30,15,development,accepted,Weather Company
+KXHIGHNY-26AUG31,KXHIGHNY,2026-08-31,9,development,accepted,Weather Company
+KXHIGHNY-26AUG31,KXHIGHNY,2026-08-31,12,development,accepted,Weather Company
+KXHIGHNY-26AUG31,KXHIGHNY,2026-08-31,15,development,accepted,Weather Company
+KXHIGHNY-26JUL19,KXHIGHNY,2026-07-19,9,development,accepted,NWS
+KXHIGHNY-26JUL19,KXHIGHNY,2026-07-19,12,development,accepted,NWS
+KXHIGHNY-26JUL19,KXHIGHNY,2026-07-19,15,development,accepted,NWS
+KXHIGHNY-26JUL20,KXHIGHNY,2026-07-20,9,development,accepted,NWS
+KXHIGHNY-26JUL20,KXHIGHNY,2026-07-20,12,development,accepted,NWS
+KXHIGHNY-26JUL20,KXHIGHNY,2026-07-20,15,development,accepted,NWS
+KXHIGHNY-26JUL21,KXHIGHNY,2026-07-21,9,development,accepted,NWS
+KXHIGHNY-26JUL21,KXHIGHNY,2026-07-21,12,development,accepted,NWS
+KXHIGHNY-26JUL21,KXHIGHNY,2026-07-21,15,development,accepted,NWS
+KXHIGHNY-26JUL22,KXHIGHNY,2026-07-22,9,development,accepted,NWS
+KXHIGHNY-26JUL22,KXHIGHNY,2026-07-22,12,development,accepted,NWS
+KXHIGHNY-26JUL22,KXHIGHNY,2026-07-22,15,development,accepted,NWS
+KXHIGHNY-26JUL23,KXHIGHNY,2026-07-23,9,development,accepted,NWS
+KXHIGHNY-26JUL23,KXHIGHNY,2026-07-23,12,development,accepted,NWS
+KXHIGHNY-26JUL23,KXHIGHNY,2026-07-23,15,development,accepted,NWS
+KXHIGHNY-26JUL24,KXHIGHNY,2026-07-24,9,development,accepted,NWS
+KXHIGHNY-26JUL24,KXHIGHNY,2026-07-24,12,development,accepted,NWS
+KXHIGHNY-26JUL24,KXHIGHNY,2026-07-24,15,development,accepted,NWS
+KXHIGHNY-26JUL25,KXHIGHNY,2026-07-25,9,development,accepted,NWS
+KXHIGHNY-26JUL25,KXHIGHNY,2026-07-25,12,development,accepted,NWS
+KXHIGHNY-26JUL25,KXHIGHNY,2026-07-25,15,development,accepted,NWS
+KXHIGHNY-26JUL26,KXHIGHNY,2026-07-26,9,development,accepted,NWS
+KXHIGHNY-26JUL26,KXHIGHNY,2026-07-26,12,development,accepted,NWS
+KXHIGHNY-26JUL26,KXHIGHNY,2026-07-26,15,development,accepted,NWS
+KXHIGHNY-26JUL27,KXHIGHNY,2026-07-27,9,development,accepted,NWS
+KXHIGHNY-26JUL27,KXHIGHNY,2026-07-27,12,development,accepted,NWS
+KXHIGHNY-26JUL27,KXHIGHNY,2026-07-27,15,development,accepted,NWS
+KXHIGHNY-26JUL28,KXHIGHNY,2026-07-28,9,development,accepted,NWS
+KXHIGHNY-26JUL28,KXHIGHNY,2026-07-28,12,development,accepted,NWS
+KXHIGHNY-26JUL28,KXHIGHNY,2026-07-28,15,development,accepted,NWS
+KXHIGHNY-26JUL29,KXHIGHNY,2026-07-29,9,development,accepted,NWS
+KXHIGHNY-26JUL29,KXHIGHNY,2026-07-29,12,development,accepted,NWS
+KXHIGHNY-26JUL29,KXHIGHNY,2026-07-29,15,development,accepted,NWS
+KXHIGHNY-26JUL30,KXHIGHNY,2026-07-30,9,development,accepted,NWS
+KXHIGHNY-26JUL30,KXHIGHNY,2026-07-30,12,development,accepted,NWS
+KXHIGHNY-26JUL30,KXHIGHNY,2026-07-30,15,development,accepted,NWS
+KXHIGHNY-26JUL31,KXHIGHNY,2026-07-31,9,development,accepted,NWS
+KXHIGHNY-26JUL31,KXHIGHNY,2026-07-31,12,development,accepted,NWS
+KXHIGHNY-26JUL31,KXHIGHNY,2026-07-31,15,development,accepted,NWS
+KXHIGHNY-26OCT01,KXHIGHNY,2026-10-01,9,test,accepted,Weather Company
+KXHIGHNY-26OCT01,KXHIGHNY,2026-10-01,12,test,accepted,Weather Company
+KXHIGHNY-26OCT01,KXHIGHNY,2026-10-01,15,test,accepted,Weather Company
+KXHIGHNY-26OCT02,KXHIGHNY,2026-10-02,9,test,accepted,Weather Company
+KXHIGHNY-26OCT02,KXHIGHNY,2026-10-02,12,test,accepted,Weather Company
+KXHIGHNY-26OCT02,KXHIGHNY,2026-10-02,15,test,accepted,Weather Company
+KXHIGHNY-26OCT03,KXHIGHNY,2026-10-03,9,test,accepted,Weather Company
+KXHIGHNY-26OCT03,KXHIGHNY,2026-10-03,12,test,accepted,Weather Company
+KXHIGHNY-26OCT03,KXHIGHNY,2026-10-03,15,test,accepted,Weather Company
+KXHIGHNY-26OCT04,KXHIGHNY,2026-10-04,9,test,accepted,Weather Company
+KXHIGHNY-26OCT04,KXHIGHNY,2026-10-04,12,test,accepted,Weather Company
+KXHIGHNY-26OCT04,KXHIGHNY,2026-10-04,15,test,accepted,Weather Company
+KXHIGHNY-26OCT05,KXHIGHNY,2026-10-05,9,test,accepted,Weather Company
+KXHIGHNY-26OCT05,KXHIGHNY,2026-10-05,12,test,accepted,Weather Company
+KXHIGHNY-26OCT05,KXHIGHNY,2026-10-05,15,test,accepted,Weather Company
+KXHIGHNY-26OCT06,KXHIGHNY,2026-10-06,9,test,accepted,Weather Company
+KXHIGHNY-26OCT06,KXHIGHNY,2026-10-06,12,test,accepted,Weather Company
+KXHIGHNY-26OCT06,KXHIGHNY,2026-10-06,15,test,accepted,Weather Company
+KXHIGHNY-26OCT07,KXHIGHNY,2026-10-07,9,test,accepted,Weather Company
+KXHIGHNY-26OCT07,KXHIGHNY,2026-10-07,12,test,accepted,Weather Company
+KXHIGHNY-26OCT07,KXHIGHNY,2026-10-07,15,test,accepted,Weather Company
+KXHIGHNY-26OCT08,KXHIGHNY,2026-10-08,9,test,accepted,Weather Company
+KXHIGHNY-26OCT08,KXHIGHNY,2026-10-08,12,test,accepted,Weather Company
+KXHIGHNY-26OCT08,KXHIGHNY,2026-10-08,15,test,accepted,Weather Company
+KXHIGHNY-26OCT09,KXHIGHNY,2026-10-09,9,test,accepted,Weather Company
+KXHIGHNY-26OCT09,KXHIGHNY,2026-10-09,12,test,accepted,Weather Company
+KXHIGHNY-26OCT09,KXHIGHNY,2026-10-09,15,test,accepted,Weather Company
+KXHIGHNY-26OCT10,KXHIGHNY,2026-10-10,9,test,accepted,Weather Company
+KXHIGHNY-26OCT10,KXHIGHNY,2026-10-10,12,test,accepted,Weather Company
+KXHIGHNY-26OCT10,KXHIGHNY,2026-10-10,15,test,accepted,Weather Company
+KXHIGHNY-26OCT11,KXHIGHNY,2026-10-11,9,test,accepted,Weather Company
+KXHIGHNY-26OCT11,KXHIGHNY,2026-10-11,12,test,accepted,Weather Company
+KXHIGHNY-26OCT11,KXHIGHNY,2026-10-11,15,test,accepted,Weather Company
+KXHIGHNY-26OCT12,KXHIGHNY,2026-10-12,9,test,accepted,Weather Company
+KXHIGHNY-26OCT12,KXHIGHNY,2026-10-12,12,test,accepted,Weather Company
+KXHIGHNY-26OCT12,KXHIGHNY,2026-10-12,15,test,accepted,Weather Company
+KXHIGHNY-26OCT13,KXHIGHNY,2026-10-13,9,test,accepted,Weather Company
+KXHIGHNY-26OCT13,KXHIGHNY,2026-10-13,12,test,accepted,Weather Company
+KXHIGHNY-26OCT13,KXHIGHNY,2026-10-13,15,test,accepted,Weather Company
+KXHIGHNY-26OCT14,KXHIGHNY,2026-10-14,9,test,accepted,Weather Company
+KXHIGHNY-26OCT14,KXHIGHNY,2026-10-14,12,test,accepted,Weather Company
+KXHIGHNY-26OCT14,KXHIGHNY,2026-10-14,15,test,accepted,Weather Company
+KXHIGHNY-26OCT15,KXHIGHNY,2026-10-15,9,test,accepted,Weather Company
+KXHIGHNY-26OCT15,KXHIGHNY,2026-10-15,12,test,accepted,Weather Company
+KXHIGHNY-26OCT15,KXHIGHNY,2026-10-15,15,test,accepted,Weather Company
+KXHIGHNY-26OCT16,KXHIGHNY,2026-10-16,9,test,accepted,Weather Company
+KXHIGHNY-26OCT16,KXHIGHNY,2026-10-16,12,test,accepted,Weather Company
+KXHIGHNY-26OCT16,KXHIGHNY,2026-10-16,15,test,accepted,Weather Company
+KXHIGHNY-26SEP01,KXHIGHNY,2026-09-01,9,development,accepted,Weather Company
+KXHIGHNY-26SEP01,KXHIGHNY,2026-09-01,12,development,accepted,Weather Company
+KXHIGHNY-26SEP01,KXHIGHNY,2026-09-01,15,development,accepted,Weather Company
+KXHIGHNY-26SEP02,KXHIGHNY,2026-09-02,9,development,missing_exact_completed_hour,Weather Company
+KXHIGHNY-26SEP02,KXHIGHNY,2026-09-02,12,development,accepted,Weather Company
+KXHIGHNY-26SEP02,KXHIGHNY,2026-09-02,15,development,accepted,Weather Company
+KXHIGHNY-26SEP03,KXHIGHNY,2026-09-03,9,development,accepted,Weather Company
+KXHIGHNY-26SEP03,KXHIGHNY,2026-09-03,12,development,accepted,Weather Company
+KXHIGHNY-26SEP03,KXHIGHNY,2026-09-03,15,development,accepted,Weather Company
+KXHIGHNY-26SEP04,KXHIGHNY,2026-09-04,9,development,accepted,Weather Company
+KXHIGHNY-26SEP04,KXHIGHNY,2026-09-04,12,development,accepted,Weather Company
+KXHIGHNY-26SEP04,KXHIGHNY,2026-09-04,15,development,accepted,Weather Company
+KXHIGHNY-26SEP05,KXHIGHNY,2026-09-05,9,development,accepted,Weather Company
+KXHIGHNY-26SEP05,KXHIGHNY,2026-09-05,12,development,accepted,Weather Company
+KXHIGHNY-26SEP05,KXHIGHNY,2026-09-05,15,development,accepted,Weather Company
+KXHIGHNY-26SEP06,KXHIGHNY,2026-09-06,9,development,accepted,Weather Company
+KXHIGHNY-26SEP06,KXHIGHNY,2026-09-06,12,development,accepted,Weather Company
+KXHIGHNY-26SEP06,KXHIGHNY,2026-09-06,15,development,accepted,Weather Company
+KXHIGHNY-26SEP07,KXHIGHNY,2026-09-07,9,development,accepted,Weather Company
+KXHIGHNY-26SEP07,KXHIGHNY,2026-09-07,12,development,accepted,Weather Company
+KXHIGHNY-26SEP07,KXHIGHNY,2026-09-07,15,development,accepted,Weather Company
+KXHIGHNY-26SEP08,KXHIGHNY,2026-09-08,9,development,accepted,Weather Company
+KXHIGHNY-26SEP08,KXHIGHNY,2026-09-08,12,development,accepted,Weather Company
+KXHIGHNY-26SEP08,KXHIGHNY,2026-09-08,15,development,accepted,Weather Company
+KXHIGHNY-26SEP09,KXHIGHNY,2026-09-09,9,development,accepted,Weather Company
+KXHIGHNY-26SEP09,KXHIGHNY,2026-09-09,12,development,accepted,Weather Company
+KXHIGHNY-26SEP09,KXHIGHNY,2026-09-09,15,development,accepted,Weather Company
+KXHIGHNY-26SEP10,KXHIGHNY,2026-09-10,9,development,accepted,Weather Company
+KXHIGHNY-26SEP10,KXHIGHNY,2026-09-10,12,development,accepted,Weather Company
+KXHIGHNY-26SEP10,KXHIGHNY,2026-09-10,15,development,accepted,Weather Company
+KXHIGHNY-26SEP11,KXHIGHNY,2026-09-11,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP11,KXHIGHNY,2026-09-11,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP11,KXHIGHNY,2026-09-11,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP12,KXHIGHNY,2026-09-12,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP12,KXHIGHNY,2026-09-12,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP12,KXHIGHNY,2026-09-12,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP13,KXHIGHNY,2026-09-13,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP13,KXHIGHNY,2026-09-13,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP13,KXHIGHNY,2026-09-13,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP14,KXHIGHNY,2026-09-14,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP14,KXHIGHNY,2026-09-14,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP14,KXHIGHNY,2026-09-14,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP15,KXHIGHNY,2026-09-15,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP15,KXHIGHNY,2026-09-15,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP15,KXHIGHNY,2026-09-15,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP16,KXHIGHNY,2026-09-16,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP16,KXHIGHNY,2026-09-16,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP16,KXHIGHNY,2026-09-16,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP17,KXHIGHNY,2026-09-17,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP17,KXHIGHNY,2026-09-17,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP17,KXHIGHNY,2026-09-17,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP18,KXHIGHNY,2026-09-18,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP18,KXHIGHNY,2026-09-18,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP18,KXHIGHNY,2026-09-18,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP19,KXHIGHNY,2026-09-19,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP19,KXHIGHNY,2026-09-19,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP19,KXHIGHNY,2026-09-19,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP20,KXHIGHNY,2026-09-20,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP20,KXHIGHNY,2026-09-20,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP20,KXHIGHNY,2026-09-20,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP21,KXHIGHNY,2026-09-21,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP21,KXHIGHNY,2026-09-21,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP21,KXHIGHNY,2026-09-21,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP22,KXHIGHNY,2026-09-22,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP22,KXHIGHNY,2026-09-22,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP22,KXHIGHNY,2026-09-22,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP23,KXHIGHNY,2026-09-23,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP23,KXHIGHNY,2026-09-23,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP23,KXHIGHNY,2026-09-23,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP24,KXHIGHNY,2026-09-24,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP24,KXHIGHNY,2026-09-24,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP24,KXHIGHNY,2026-09-24,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP25,KXHIGHNY,2026-09-25,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP25,KXHIGHNY,2026-09-25,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP25,KXHIGHNY,2026-09-25,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP26,KXHIGHNY,2026-09-26,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP26,KXHIGHNY,2026-09-26,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP26,KXHIGHNY,2026-09-26,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP27,KXHIGHNY,2026-09-27,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP27,KXHIGHNY,2026-09-27,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP27,KXHIGHNY,2026-09-27,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP28,KXHIGHNY,2026-09-28,9,validation,accepted,Weather Company
+KXHIGHNY-26SEP28,KXHIGHNY,2026-09-28,12,validation,accepted,Weather Company
+KXHIGHNY-26SEP28,KXHIGHNY,2026-09-28,15,validation,accepted,Weather Company
+KXHIGHNY-26SEP29,KXHIGHNY,2026-09-29,9,test,accepted,Weather Company
+KXHIGHNY-26SEP29,KXHIGHNY,2026-09-29,12,test,accepted,Weather Company
+KXHIGHNY-26SEP29,KXHIGHNY,2026-09-29,15,test,accepted,Weather Company
+KXHIGHNY-26SEP30,KXHIGHNY,2026-09-30,9,test,accepted,Weather Company
+KXHIGHNY-26SEP30,KXHIGHNY,2026-09-30,12,test,accepted,Weather Company
+KXHIGHNY-26SEP30,KXHIGHNY,2026-09-30,15,test,accepted,Weather Company
+KXHIGHCHI-26AUG01,KXHIGHCHI,2026-08-01,9,development,accepted,NWS
+KXHIGHCHI-26AUG01,KXHIGHCHI,2026-08-01,12,development,accepted,NWS
+KXHIGHCHI-26AUG01,KXHIGHCHI,2026-08-01,15,development,missing_exact_completed_hour,NWS
+KXHIGHCHI-26AUG02,KXHIGHCHI,2026-08-02,9,development,accepted,NWS
+KXHIGHCHI-26AUG02,KXHIGHCHI,2026-08-02,12,development,accepted,NWS
+KXHIGHCHI-26AUG02,KXHIGHCHI,2026-08-02,15,development,accepted,NWS
+KXHIGHCHI-26AUG03,KXHIGHCHI,2026-08-03,9,development,accepted,NWS
+KXHIGHCHI-26AUG03,KXHIGHCHI,2026-08-03,12,development,accepted,NWS
+KXHIGHCHI-26AUG03,KXHIGHCHI,2026-08-03,15,development,accepted,NWS
+KXHIGHCHI-26AUG04,KXHIGHCHI,2026-08-04,9,development,accepted,NWS
+KXHIGHCHI-26AUG04,KXHIGHCHI,2026-08-04,12,development,accepted,NWS
+KXHIGHCHI-26AUG04,KXHIGHCHI,2026-08-04,15,development,accepted,NWS
+KXHIGHCHI-26AUG05,KXHIGHCHI,2026-08-05,9,development,accepted,NWS
+KXHIGHCHI-26AUG05,KXHIGHCHI,2026-08-05,12,development,accepted,NWS
+KXHIGHCHI-26AUG05,KXHIGHCHI,2026-08-05,15,development,accepted,NWS
+KXHIGHCHI-26AUG06,KXHIGHCHI,2026-08-06,9,development,accepted,NWS
+KXHIGHCHI-26AUG06,KXHIGHCHI,2026-08-06,12,development,accepted,NWS
+KXHIGHCHI-26AUG06,KXHIGHCHI,2026-08-06,15,development,accepted,NWS
+KXHIGHCHI-26AUG07,KXHIGHCHI,2026-08-07,9,development,accepted,NWS
+KXHIGHCHI-26AUG07,KXHIGHCHI,2026-08-07,12,development,accepted,NWS
+KXHIGHCHI-26AUG07,KXHIGHCHI,2026-08-07,15,development,accepted,NWS
+KXHIGHCHI-26AUG08,KXHIGHCHI,2026-08-08,9,development,accepted,NWS
+KXHIGHCHI-26AUG08,KXHIGHCHI,2026-08-08,12,development,accepted,NWS
+KXHIGHCHI-26AUG08,KXHIGHCHI,2026-08-08,15,development,accepted,NWS
+KXHIGHCHI-26AUG09,KXHIGHCHI,2026-08-09,9,development,accepted,NWS
+KXHIGHCHI-26AUG09,KXHIGHCHI,2026-08-09,12,development,accepted,NWS
+KXHIGHCHI-26AUG09,KXHIGHCHI,2026-08-09,15,development,accepted,NWS
+KXHIGHCHI-26AUG10,KXHIGHCHI,2026-08-10,9,development,accepted,NWS
+KXHIGHCHI-26AUG10,KXHIGHCHI,2026-08-10,12,development,accepted,NWS
+KXHIGHCHI-26AUG10,KXHIGHCHI,2026-08-10,15,development,accepted,NWS
+KXHIGHCHI-26AUG11,KXHIGHCHI,2026-08-11,9,development,accepted,NWS
+KXHIGHCHI-26AUG11,KXHIGHCHI,2026-08-11,12,development,accepted,NWS
+KXHIGHCHI-26AUG11,KXHIGHCHI,2026-08-11,15,development,accepted,NWS
+KXHIGHCHI-26AUG12,KXHIGHCHI,2026-08-12,9,development,accepted,NWS
+KXHIGHCHI-26AUG12,KXHIGHCHI,2026-08-12,12,development,accepted,NWS
+KXHIGHCHI-26AUG12,KXHIGHCHI,2026-08-12,15,development,accepted,NWS
+KXHIGHCHI-26AUG13,KXHIGHCHI,2026-08-13,9,development,accepted,NWS
+KXHIGHCHI-26AUG13,KXHIGHCHI,2026-08-13,12,development,accepted,NWS
+KXHIGHCHI-26AUG13,KXHIGHCHI,2026-08-13,15,development,accepted,NWS
+KXHIGHCHI-26AUG14,KXHIGHCHI,2026-08-14,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG14,KXHIGHCHI,2026-08-14,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG14,KXHIGHCHI,2026-08-14,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG15,KXHIGHCHI,2026-08-15,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG15,KXHIGHCHI,2026-08-15,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG15,KXHIGHCHI,2026-08-15,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG16,KXHIGHCHI,2026-08-16,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG16,KXHIGHCHI,2026-08-16,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG16,KXHIGHCHI,2026-08-16,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG17,KXHIGHCHI,2026-08-17,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG17,KXHIGHCHI,2026-08-17,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG17,KXHIGHCHI,2026-08-17,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG18,KXHIGHCHI,2026-08-18,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG18,KXHIGHCHI,2026-08-18,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG18,KXHIGHCHI,2026-08-18,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG19,KXHIGHCHI,2026-08-19,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG19,KXHIGHCHI,2026-08-19,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG19,KXHIGHCHI,2026-08-19,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG20,KXHIGHCHI,2026-08-20,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG20,KXHIGHCHI,2026-08-20,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG20,KXHIGHCHI,2026-08-20,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG21,KXHIGHCHI,2026-08-21,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG21,KXHIGHCHI,2026-08-21,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG21,KXHIGHCHI,2026-08-21,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG22,KXHIGHCHI,2026-08-22,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG22,KXHIGHCHI,2026-08-22,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG22,KXHIGHCHI,2026-08-22,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG23,KXHIGHCHI,2026-08-23,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG23,KXHIGHCHI,2026-08-23,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG23,KXHIGHCHI,2026-08-23,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG24,KXHIGHCHI,2026-08-24,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG24,KXHIGHCHI,2026-08-24,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG24,KXHIGHCHI,2026-08-24,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG25,KXHIGHCHI,2026-08-25,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG25,KXHIGHCHI,2026-08-25,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG25,KXHIGHCHI,2026-08-25,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG26,KXHIGHCHI,2026-08-26,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG26,KXHIGHCHI,2026-08-26,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG26,KXHIGHCHI,2026-08-26,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG27,KXHIGHCHI,2026-08-27,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG27,KXHIGHCHI,2026-08-27,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG27,KXHIGHCHI,2026-08-27,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG28,KXHIGHCHI,2026-08-28,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG28,KXHIGHCHI,2026-08-28,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG28,KXHIGHCHI,2026-08-28,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG29,KXHIGHCHI,2026-08-29,9,development,missing_exact_completed_hour,Weather Company
+KXHIGHCHI-26AUG29,KXHIGHCHI,2026-08-29,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG29,KXHIGHCHI,2026-08-29,15,development,accepted,Weather Company
+KXHIGHCHI-26AUG30,KXHIGHCHI,2026-08-30,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG30,KXHIGHCHI,2026-08-30,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG30,KXHIGHCHI,2026-08-30,15,development,missing_exact_completed_hour,Weather Company
+KXHIGHCHI-26AUG31,KXHIGHCHI,2026-08-31,9,development,accepted,Weather Company
+KXHIGHCHI-26AUG31,KXHIGHCHI,2026-08-31,12,development,accepted,Weather Company
+KXHIGHCHI-26AUG31,KXHIGHCHI,2026-08-31,15,development,accepted,Weather Company
+KXHIGHCHI-26JUL19,KXHIGHCHI,2026-07-19,9,development,accepted,NWS
+KXHIGHCHI-26JUL19,KXHIGHCHI,2026-07-19,12,development,accepted,NWS
+KXHIGHCHI-26JUL19,KXHIGHCHI,2026-07-19,15,development,accepted,NWS
+KXHIGHCHI-26JUL20,KXHIGHCHI,2026-07-20,9,development,accepted,NWS
+KXHIGHCHI-26JUL20,KXHIGHCHI,2026-07-20,12,development,accepted,NWS
+KXHIGHCHI-26JUL20,KXHIGHCHI,2026-07-20,15,development,accepted,NWS
+KXHIGHCHI-26JUL21,KXHIGHCHI,2026-07-21,9,development,accepted,NWS
+KXHIGHCHI-26JUL21,KXHIGHCHI,2026-07-21,12,development,accepted,NWS
+KXHIGHCHI-26JUL21,KXHIGHCHI,2026-07-21,15,development,accepted,NWS
+KXHIGHCHI-26JUL22,KXHIGHCHI,2026-07-22,9,development,accepted,NWS
+KXHIGHCHI-26JUL22,KXHIGHCHI,2026-07-22,12,development,accepted,NWS
+KXHIGHCHI-26JUL22,KXHIGHCHI,2026-07-22,15,development,accepted,NWS
+KXHIGHCHI-26JUL23,KXHIGHCHI,2026-07-23,9,development,accepted,NWS
+KXHIGHCHI-26JUL23,KXHIGHCHI,2026-07-23,12,development,accepted,NWS
+KXHIGHCHI-26JUL23,KXHIGHCHI,2026-07-23,15,development,accepted,NWS
+KXHIGHCHI-26JUL24,KXHIGHCHI,2026-07-24,9,development,accepted,NWS
+KXHIGHCHI-26JUL24,KXHIGHCHI,2026-07-24,12,development,accepted,NWS
+KXHIGHCHI-26JUL24,KXHIGHCHI,2026-07-24,15,development,accepted,NWS
+KXHIGHCHI-26JUL25,KXHIGHCHI,2026-07-25,9,development,accepted,NWS
+KXHIGHCHI-26JUL25,KXHIGHCHI,2026-07-25,12,development,accepted,NWS
+KXHIGHCHI-26JUL25,KXHIGHCHI,2026-07-25,15,development,accepted,NWS
+KXHIGHCHI-26JUL26,KXHIGHCHI,2026-07-26,9,development,accepted,NWS
+KXHIGHCHI-26JUL26,KXHIGHCHI,2026-07-26,12,development,accepted,NWS
+KXHIGHCHI-26JUL26,KXHIGHCHI,2026-07-26,15,development,accepted,NWS
+KXHIGHCHI-26JUL27,KXHIGHCHI,2026-07-27,9,development,accepted,NWS
+KXHIGHCHI-26JUL27,KXHIGHCHI,2026-07-27,12,development,accepted,NWS
+KXHIGHCHI-26JUL27,KXHIGHCHI,2026-07-27,15,development,accepted,NWS
+KXHIGHCHI-26JUL28,KXHIGHCHI,2026-07-28,9,development,accepted,NWS
+KXHIGHCHI-26JUL28,KXHIGHCHI,2026-07-28,12,development,accepted,NWS
+KXHIGHCHI-26JUL28,KXHIGHCHI,2026-07-28,15,development,accepted,NWS
+KXHIGHCHI-26JUL29,KXHIGHCHI,2026-07-29,9,development,accepted,NWS
+KXHIGHCHI-26JUL29,KXHIGHCHI,2026-07-29,12,development,accepted,NWS
+KXHIGHCHI-26JUL29,KXHIGHCHI,2026-07-29,15,development,accepted,NWS
+KXHIGHCHI-26JUL30,KXHIGHCHI,2026-07-30,9,development,accepted,NWS
+KXHIGHCHI-26JUL30,KXHIGHCHI,2026-07-30,12,development,accepted,NWS
+KXHIGHCHI-26JUL30,KXHIGHCHI,2026-07-30,15,development,accepted,NWS
+KXHIGHCHI-26JUL31,KXHIGHCHI,2026-07-31,9,development,accepted,NWS
+KXHIGHCHI-26JUL31,KXHIGHCHI,2026-07-31,12,development,accepted,NWS
+KXHIGHCHI-26JUL31,KXHIGHCHI,2026-07-31,15,development,accepted,NWS
+KXHIGHCHI-26OCT01,KXHIGHCHI,2026-10-01,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT01,KXHIGHCHI,2026-10-01,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT01,KXHIGHCHI,2026-10-01,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT02,KXHIGHCHI,2026-10-02,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT02,KXHIGHCHI,2026-10-02,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT02,KXHIGHCHI,2026-10-02,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT03,KXHIGHCHI,2026-10-03,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT03,KXHIGHCHI,2026-10-03,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT03,KXHIGHCHI,2026-10-03,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT04,KXHIGHCHI,2026-10-04,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT04,KXHIGHCHI,2026-10-04,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT04,KXHIGHCHI,2026-10-04,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT05,KXHIGHCHI,2026-10-05,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT05,KXHIGHCHI,2026-10-05,12,test,missing_exact_completed_hour,Weather Company
+KXHIGHCHI-26OCT05,KXHIGHCHI,2026-10-05,15,test,missing_exact_completed_hour,Weather Company
+KXHIGHCHI-26OCT06,KXHIGHCHI,2026-10-06,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT06,KXHIGHCHI,2026-10-06,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT06,KXHIGHCHI,2026-10-06,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT07,KXHIGHCHI,2026-10-07,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT07,KXHIGHCHI,2026-10-07,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT07,KXHIGHCHI,2026-10-07,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT08,KXHIGHCHI,2026-10-08,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT08,KXHIGHCHI,2026-10-08,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT08,KXHIGHCHI,2026-10-08,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT09,KXHIGHCHI,2026-10-09,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT09,KXHIGHCHI,2026-10-09,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT09,KXHIGHCHI,2026-10-09,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT10,KXHIGHCHI,2026-10-10,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT10,KXHIGHCHI,2026-10-10,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT10,KXHIGHCHI,2026-10-10,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT11,KXHIGHCHI,2026-10-11,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT11,KXHIGHCHI,2026-10-11,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT11,KXHIGHCHI,2026-10-11,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT12,KXHIGHCHI,2026-10-12,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT12,KXHIGHCHI,2026-10-12,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT12,KXHIGHCHI,2026-10-12,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT13,KXHIGHCHI,2026-10-13,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT13,KXHIGHCHI,2026-10-13,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT13,KXHIGHCHI,2026-10-13,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT14,KXHIGHCHI,2026-10-14,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT14,KXHIGHCHI,2026-10-14,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT14,KXHIGHCHI,2026-10-14,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT15,KXHIGHCHI,2026-10-15,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT15,KXHIGHCHI,2026-10-15,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT15,KXHIGHCHI,2026-10-15,15,test,accepted,Weather Company
+KXHIGHCHI-26OCT16,KXHIGHCHI,2026-10-16,9,test,accepted,Weather Company
+KXHIGHCHI-26OCT16,KXHIGHCHI,2026-10-16,12,test,accepted,Weather Company
+KXHIGHCHI-26OCT16,KXHIGHCHI,2026-10-16,15,test,accepted,Weather Company
+KXHIGHCHI-26SEP01,KXHIGHCHI,2026-09-01,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP01,KXHIGHCHI,2026-09-01,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP01,KXHIGHCHI,2026-09-01,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP02,KXHIGHCHI,2026-09-02,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP02,KXHIGHCHI,2026-09-02,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP02,KXHIGHCHI,2026-09-02,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP03,KXHIGHCHI,2026-09-03,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP03,KXHIGHCHI,2026-09-03,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP03,KXHIGHCHI,2026-09-03,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP04,KXHIGHCHI,2026-09-04,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP04,KXHIGHCHI,2026-09-04,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP04,KXHIGHCHI,2026-09-04,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP05,KXHIGHCHI,2026-09-05,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP05,KXHIGHCHI,2026-09-05,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP05,KXHIGHCHI,2026-09-05,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP06,KXHIGHCHI,2026-09-06,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP06,KXHIGHCHI,2026-09-06,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP06,KXHIGHCHI,2026-09-06,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP07,KXHIGHCHI,2026-09-07,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP07,KXHIGHCHI,2026-09-07,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP07,KXHIGHCHI,2026-09-07,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP08,KXHIGHCHI,2026-09-08,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP08,KXHIGHCHI,2026-09-08,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP08,KXHIGHCHI,2026-09-08,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP09,KXHIGHCHI,2026-09-09,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP09,KXHIGHCHI,2026-09-09,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP09,KXHIGHCHI,2026-09-09,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP10,KXHIGHCHI,2026-09-10,9,development,accepted,Weather Company
+KXHIGHCHI-26SEP10,KXHIGHCHI,2026-09-10,12,development,accepted,Weather Company
+KXHIGHCHI-26SEP10,KXHIGHCHI,2026-09-10,15,development,accepted,Weather Company
+KXHIGHCHI-26SEP11,KXHIGHCHI,2026-09-11,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP11,KXHIGHCHI,2026-09-11,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP11,KXHIGHCHI,2026-09-11,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP12,KXHIGHCHI,2026-09-12,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP12,KXHIGHCHI,2026-09-12,12,validation,missing_exact_completed_hour,Weather Company
+KXHIGHCHI-26SEP12,KXHIGHCHI,2026-09-12,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP13,KXHIGHCHI,2026-09-13,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP13,KXHIGHCHI,2026-09-13,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP13,KXHIGHCHI,2026-09-13,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP14,KXHIGHCHI,2026-09-14,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP14,KXHIGHCHI,2026-09-14,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP14,KXHIGHCHI,2026-09-14,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP15,KXHIGHCHI,2026-09-15,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP15,KXHIGHCHI,2026-09-15,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP15,KXHIGHCHI,2026-09-15,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP16,KXHIGHCHI,2026-09-16,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP16,KXHIGHCHI,2026-09-16,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP16,KXHIGHCHI,2026-09-16,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP17,KXHIGHCHI,2026-09-17,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP17,KXHIGHCHI,2026-09-17,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP17,KXHIGHCHI,2026-09-17,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP18,KXHIGHCHI,2026-09-18,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP18,KXHIGHCHI,2026-09-18,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP18,KXHIGHCHI,2026-09-18,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP19,KXHIGHCHI,2026-09-19,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP19,KXHIGHCHI,2026-09-19,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP19,KXHIGHCHI,2026-09-19,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP20,KXHIGHCHI,2026-09-20,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP20,KXHIGHCHI,2026-09-20,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP20,KXHIGHCHI,2026-09-20,15,validation,missing_exact_completed_hour,Weather Company
+KXHIGHCHI-26SEP21,KXHIGHCHI,2026-09-21,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP21,KXHIGHCHI,2026-09-21,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP21,KXHIGHCHI,2026-09-21,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP22,KXHIGHCHI,2026-09-22,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP22,KXHIGHCHI,2026-09-22,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP22,KXHIGHCHI,2026-09-22,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP23,KXHIGHCHI,2026-09-23,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP23,KXHIGHCHI,2026-09-23,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP23,KXHIGHCHI,2026-09-23,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP24,KXHIGHCHI,2026-09-24,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP24,KXHIGHCHI,2026-09-24,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP24,KXHIGHCHI,2026-09-24,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP25,KXHIGHCHI,2026-09-25,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP25,KXHIGHCHI,2026-09-25,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP25,KXHIGHCHI,2026-09-25,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP26,KXHIGHCHI,2026-09-26,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP26,KXHIGHCHI,2026-09-26,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP26,KXHIGHCHI,2026-09-26,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP27,KXHIGHCHI,2026-09-27,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP27,KXHIGHCHI,2026-09-27,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP27,KXHIGHCHI,2026-09-27,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP28,KXHIGHCHI,2026-09-28,9,validation,accepted,Weather Company
+KXHIGHCHI-26SEP28,KXHIGHCHI,2026-09-28,12,validation,accepted,Weather Company
+KXHIGHCHI-26SEP28,KXHIGHCHI,2026-09-28,15,validation,accepted,Weather Company
+KXHIGHCHI-26SEP29,KXHIGHCHI,2026-09-29,9,test,accepted,Weather Company
+KXHIGHCHI-26SEP29,KXHIGHCHI,2026-09-29,12,test,accepted,Weather Company
+KXHIGHCHI-26SEP29,KXHIGHCHI,2026-09-29,15,test,accepted,Weather Company
+KXHIGHCHI-26SEP30,KXHIGHCHI,2026-09-30,9,test,accepted,Weather Company
+KXHIGHCHI-26SEP30,KXHIGHCHI,2026-09-30,12,test,accepted,Weather Company
+KXHIGHCHI-26SEP30,KXHIGHCHI,2026-09-30,15,test,accepted,Weather Company
+KXHIGHMIA-26AUG01,KXHIGHMIA,2026-08-01,9,development,accepted,NWS
+KXHIGHMIA-26AUG01,KXHIGHMIA,2026-08-01,12,development,accepted,NWS
+KXHIGHMIA-26AUG01,KXHIGHMIA,2026-08-01,15,development,accepted,NWS
+KXHIGHMIA-26AUG02,KXHIGHMIA,2026-08-02,9,development,accepted,NWS
+KXHIGHMIA-26AUG02,KXHIGHMIA,2026-08-02,12,development,accepted,NWS
+KXHIGHMIA-26AUG02,KXHIGHMIA,2026-08-02,15,development,accepted,NWS
+KXHIGHMIA-26AUG03,KXHIGHMIA,2026-08-03,9,development,accepted,NWS
+KXHIGHMIA-26AUG03,KXHIGHMIA,2026-08-03,12,development,accepted,NWS
+KXHIGHMIA-26AUG03,KXHIGHMIA,2026-08-03,15,development,accepted,NWS
+KXHIGHMIA-26AUG04,KXHIGHMIA,2026-08-04,9,development,accepted,NWS
+KXHIGHMIA-26AUG04,KXHIGHMIA,2026-08-04,12,development,accepted,NWS
+KXHIGHMIA-26AUG04,KXHIGHMIA,2026-08-04,15,development,accepted,NWS
+KXHIGHMIA-26AUG05,KXHIGHMIA,2026-08-05,9,development,accepted,NWS
+KXHIGHMIA-26AUG05,KXHIGHMIA,2026-08-05,12,development,accepted,NWS
+KXHIGHMIA-26AUG05,KXHIGHMIA,2026-08-05,15,development,accepted,NWS
+KXHIGHMIA-26AUG06,KXHIGHMIA,2026-08-06,9,development,accepted,NWS
+KXHIGHMIA-26AUG06,KXHIGHMIA,2026-08-06,12,development,accepted,NWS
+KXHIGHMIA-26AUG06,KXHIGHMIA,2026-08-06,15,development,accepted,NWS
+KXHIGHMIA-26AUG07,KXHIGHMIA,2026-08-07,9,development,accepted,NWS
+KXHIGHMIA-26AUG07,KXHIGHMIA,2026-08-07,12,development,accepted,NWS
+KXHIGHMIA-26AUG07,KXHIGHMIA,2026-08-07,15,development,accepted,NWS
+KXHIGHMIA-26AUG08,KXHIGHMIA,2026-08-08,9,development,accepted,NWS
+KXHIGHMIA-26AUG08,KXHIGHMIA,2026-08-08,12,development,accepted,NWS
+KXHIGHMIA-26AUG08,KXHIGHMIA,2026-08-08,15,development,accepted,NWS
+KXHIGHMIA-26AUG09,KXHIGHMIA,2026-08-09,9,development,accepted,NWS
+KXHIGHMIA-26AUG09,KXHIGHMIA,2026-08-09,12,development,accepted,NWS
+KXHIGHMIA-26AUG09,KXHIGHMIA,2026-08-09,15,development,accepted,NWS
+KXHIGHMIA-26AUG10,KXHIGHMIA,2026-08-10,9,development,accepted,NWS
+KXHIGHMIA-26AUG10,KXHIGHMIA,2026-08-10,12,development,accepted,NWS
+KXHIGHMIA-26AUG10,KXHIGHMIA,2026-08-10,15,development,accepted,NWS
+KXHIGHMIA-26AUG11,KXHIGHMIA,2026-08-11,9,development,accepted,NWS
+KXHIGHMIA-26AUG11,KXHIGHMIA,2026-08-11,12,development,accepted,NWS
+KXHIGHMIA-26AUG11,KXHIGHMIA,2026-08-11,15,development,accepted,NWS
+KXHIGHMIA-26AUG12,KXHIGHMIA,2026-08-12,9,development,accepted,NWS
+KXHIGHMIA-26AUG12,KXHIGHMIA,2026-08-12,12,development,accepted,NWS
+KXHIGHMIA-26AUG12,KXHIGHMIA,2026-08-12,15,development,accepted,NWS
+KXHIGHMIA-26AUG13,KXHIGHMIA,2026-08-13,9,development,accepted,NWS
+KXHIGHMIA-26AUG13,KXHIGHMIA,2026-08-13,12,development,accepted,NWS
+KXHIGHMIA-26AUG13,KXHIGHMIA,2026-08-13,15,development,accepted,NWS
+KXHIGHMIA-26AUG14,KXHIGHMIA,2026-08-14,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG14,KXHIGHMIA,2026-08-14,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG14,KXHIGHMIA,2026-08-14,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG15,KXHIGHMIA,2026-08-15,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG15,KXHIGHMIA,2026-08-15,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG15,KXHIGHMIA,2026-08-15,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG16,KXHIGHMIA,2026-08-16,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG16,KXHIGHMIA,2026-08-16,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG16,KXHIGHMIA,2026-08-16,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG17,KXHIGHMIA,2026-08-17,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG17,KXHIGHMIA,2026-08-17,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG17,KXHIGHMIA,2026-08-17,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG18,KXHIGHMIA,2026-08-18,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG18,KXHIGHMIA,2026-08-18,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG18,KXHIGHMIA,2026-08-18,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG19,KXHIGHMIA,2026-08-19,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG19,KXHIGHMIA,2026-08-19,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG19,KXHIGHMIA,2026-08-19,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG20,KXHIGHMIA,2026-08-20,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG20,KXHIGHMIA,2026-08-20,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG20,KXHIGHMIA,2026-08-20,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG21,KXHIGHMIA,2026-08-21,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG21,KXHIGHMIA,2026-08-21,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG21,KXHIGHMIA,2026-08-21,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG22,KXHIGHMIA,2026-08-22,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG22,KXHIGHMIA,2026-08-22,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG22,KXHIGHMIA,2026-08-22,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG23,KXHIGHMIA,2026-08-23,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG23,KXHIGHMIA,2026-08-23,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG23,KXHIGHMIA,2026-08-23,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG24,KXHIGHMIA,2026-08-24,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG24,KXHIGHMIA,2026-08-24,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG24,KXHIGHMIA,2026-08-24,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG25,KXHIGHMIA,2026-08-25,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG25,KXHIGHMIA,2026-08-25,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG25,KXHIGHMIA,2026-08-25,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG26,KXHIGHMIA,2026-08-26,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG26,KXHIGHMIA,2026-08-26,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG26,KXHIGHMIA,2026-08-26,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG27,KXHIGHMIA,2026-08-27,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG27,KXHIGHMIA,2026-08-27,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG27,KXHIGHMIA,2026-08-27,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG28,KXHIGHMIA,2026-08-28,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG28,KXHIGHMIA,2026-08-28,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG28,KXHIGHMIA,2026-08-28,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG29,KXHIGHMIA,2026-08-29,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG29,KXHIGHMIA,2026-08-29,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG29,KXHIGHMIA,2026-08-29,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG30,KXHIGHMIA,2026-08-30,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG30,KXHIGHMIA,2026-08-30,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG30,KXHIGHMIA,2026-08-30,15,development,accepted,Weather Company
+KXHIGHMIA-26AUG31,KXHIGHMIA,2026-08-31,9,development,accepted,Weather Company
+KXHIGHMIA-26AUG31,KXHIGHMIA,2026-08-31,12,development,accepted,Weather Company
+KXHIGHMIA-26AUG31,KXHIGHMIA,2026-08-31,15,development,accepted,Weather Company
+KXHIGHMIA-26JUL19,KXHIGHMIA,2026-07-19,9,development,accepted,NWS
+KXHIGHMIA-26JUL19,KXHIGHMIA,2026-07-19,12,development,accepted,NWS
+KXHIGHMIA-26JUL19,KXHIGHMIA,2026-07-19,15,development,accepted,NWS
+KXHIGHMIA-26JUL20,KXHIGHMIA,2026-07-20,9,development,accepted,NWS
+KXHIGHMIA-26JUL20,KXHIGHMIA,2026-07-20,12,development,accepted,NWS
+KXHIGHMIA-26JUL20,KXHIGHMIA,2026-07-20,15,development,accepted,NWS
+KXHIGHMIA-26JUL21,KXHIGHMIA,2026-07-21,9,development,accepted,NWS
+KXHIGHMIA-26JUL21,KXHIGHMIA,2026-07-21,12,development,accepted,NWS
+KXHIGHMIA-26JUL21,KXHIGHMIA,2026-07-21,15,development,accepted,NWS
+KXHIGHMIA-26JUL22,KXHIGHMIA,2026-07-22,9,development,accepted,NWS
+KXHIGHMIA-26JUL22,KXHIGHMIA,2026-07-22,12,development,accepted,NWS
+KXHIGHMIA-26JUL22,KXHIGHMIA,2026-07-22,15,development,accepted,NWS
+KXHIGHMIA-26JUL23,KXHIGHMIA,2026-07-23,9,development,accepted,NWS
+KXHIGHMIA-26JUL23,KXHIGHMIA,2026-07-23,12,development,accepted,NWS
+KXHIGHMIA-26JUL23,KXHIGHMIA,2026-07-23,15,development,accepted,NWS
+KXHIGHMIA-26JUL24,KXHIGHMIA,2026-07-24,9,development,accepted,NWS
+KXHIGHMIA-26JUL24,KXHIGHMIA,2026-07-24,12,development,accepted,NWS
+KXHIGHMIA-26JUL24,KXHIGHMIA,2026-07-24,15,development,accepted,NWS
+KXHIGHMIA-26JUL25,KXHIGHMIA,2026-07-25,9,development,accepted,NWS
+KXHIGHMIA-26JUL25,KXHIGHMIA,2026-07-25,12,development,accepted,NWS
+KXHIGHMIA-26JUL25,KXHIGHMIA,2026-07-25,15,development,accepted,NWS
+KXHIGHMIA-26JUL26,KXHIGHMIA,2026-07-26,9,development,accepted,NWS
+KXHIGHMIA-26JUL26,KXHIGHMIA,2026-07-26,12,development,accepted,NWS
+KXHIGHMIA-26JUL26,KXHIGHMIA,2026-07-26,15,development,accepted,NWS
+KXHIGHMIA-26JUL27,KXHIGHMIA,2026-07-27,9,development,accepted,NWS
+KXHIGHMIA-26JUL27,KXHIGHMIA,2026-07-27,12,development,accepted,NWS
+KXHIGHMIA-26JUL27,KXHIGHMIA,2026-07-27,15,development,accepted,NWS
+KXHIGHMIA-26JUL28,KXHIGHMIA,2026-07-28,9,development,accepted,NWS
+KXHIGHMIA-26JUL28,KXHIGHMIA,2026-07-28,12,development,accepted,NWS
+KXHIGHMIA-26JUL28,KXHIGHMIA,2026-07-28,15,development,accepted,NWS
+KXHIGHMIA-26JUL29,KXHIGHMIA,2026-07-29,9,development,accepted,NWS
+KXHIGHMIA-26JUL29,KXHIGHMIA,2026-07-29,12,development,accepted,NWS
+KXHIGHMIA-26JUL29,KXHIGHMIA,2026-07-29,15,development,accepted,NWS
+KXHIGHMIA-26JUL30,KXHIGHMIA,2026-07-30,9,development,accepted,NWS
+KXHIGHMIA-26JUL30,KXHIGHMIA,2026-07-30,12,development,accepted,NWS
+KXHIGHMIA-26JUL30,KXHIGHMIA,2026-07-30,15,development,accepted,NWS
+KXHIGHMIA-26JUL31,KXHIGHMIA,2026-07-31,9,development,accepted,NWS
+KXHIGHMIA-26JUL31,KXHIGHMIA,2026-07-31,12,development,accepted,NWS
+KXHIGHMIA-26JUL31,KXHIGHMIA,2026-07-31,15,development,accepted,NWS
+KXHIGHMIA-26OCT01,KXHIGHMIA,2026-10-01,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT01,KXHIGHMIA,2026-10-01,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT01,KXHIGHMIA,2026-10-01,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT02,KXHIGHMIA,2026-10-02,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT02,KXHIGHMIA,2026-10-02,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT02,KXHIGHMIA,2026-10-02,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT03,KXHIGHMIA,2026-10-03,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT03,KXHIGHMIA,2026-10-03,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT03,KXHIGHMIA,2026-10-03,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT04,KXHIGHMIA,2026-10-04,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT04,KXHIGHMIA,2026-10-04,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT04,KXHIGHMIA,2026-10-04,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT05,KXHIGHMIA,2026-10-05,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT05,KXHIGHMIA,2026-10-05,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT05,KXHIGHMIA,2026-10-05,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT06,KXHIGHMIA,2026-10-06,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT06,KXHIGHMIA,2026-10-06,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT06,KXHIGHMIA,2026-10-06,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT07,KXHIGHMIA,2026-10-07,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT07,KXHIGHMIA,2026-10-07,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT07,KXHIGHMIA,2026-10-07,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT08,KXHIGHMIA,2026-10-08,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT08,KXHIGHMIA,2026-10-08,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT08,KXHIGHMIA,2026-10-08,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT09,KXHIGHMIA,2026-10-09,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT09,KXHIGHMIA,2026-10-09,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT09,KXHIGHMIA,2026-10-09,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT10,KXHIGHMIA,2026-10-10,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT10,KXHIGHMIA,2026-10-10,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT10,KXHIGHMIA,2026-10-10,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT11,KXHIGHMIA,2026-10-11,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT11,KXHIGHMIA,2026-10-11,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT11,KXHIGHMIA,2026-10-11,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT12,KXHIGHMIA,2026-10-12,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT12,KXHIGHMIA,2026-10-12,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT12,KXHIGHMIA,2026-10-12,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT13,KXHIGHMIA,2026-10-13,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT13,KXHIGHMIA,2026-10-13,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT13,KXHIGHMIA,2026-10-13,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT14,KXHIGHMIA,2026-10-14,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT14,KXHIGHMIA,2026-10-14,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT14,KXHIGHMIA,2026-10-14,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT15,KXHIGHMIA,2026-10-15,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT15,KXHIGHMIA,2026-10-15,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT15,KXHIGHMIA,2026-10-15,15,test,accepted,Weather Company
+KXHIGHMIA-26OCT16,KXHIGHMIA,2026-10-16,9,test,accepted,Weather Company
+KXHIGHMIA-26OCT16,KXHIGHMIA,2026-10-16,12,test,accepted,Weather Company
+KXHIGHMIA-26OCT16,KXHIGHMIA,2026-10-16,15,test,accepted,Weather Company
+KXHIGHMIA-26SEP01,KXHIGHMIA,2026-09-01,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP01,KXHIGHMIA,2026-09-01,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP01,KXHIGHMIA,2026-09-01,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP02,KXHIGHMIA,2026-09-02,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP02,KXHIGHMIA,2026-09-02,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP02,KXHIGHMIA,2026-09-02,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP03,KXHIGHMIA,2026-09-03,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP03,KXHIGHMIA,2026-09-03,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP03,KXHIGHMIA,2026-09-03,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP04,KXHIGHMIA,2026-09-04,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP04,KXHIGHMIA,2026-09-04,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP04,KXHIGHMIA,2026-09-04,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP05,KXHIGHMIA,2026-09-05,9,development,missing_exact_completed_hour,Weather Company
+KXHIGHMIA-26SEP05,KXHIGHMIA,2026-09-05,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP05,KXHIGHMIA,2026-09-05,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP06,KXHIGHMIA,2026-09-06,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP06,KXHIGHMIA,2026-09-06,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP06,KXHIGHMIA,2026-09-06,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP07,KXHIGHMIA,2026-09-07,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP07,KXHIGHMIA,2026-09-07,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP07,KXHIGHMIA,2026-09-07,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP08,KXHIGHMIA,2026-09-08,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP08,KXHIGHMIA,2026-09-08,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP08,KXHIGHMIA,2026-09-08,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP09,KXHIGHMIA,2026-09-09,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP09,KXHIGHMIA,2026-09-09,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP09,KXHIGHMIA,2026-09-09,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP10,KXHIGHMIA,2026-09-10,9,development,accepted,Weather Company
+KXHIGHMIA-26SEP10,KXHIGHMIA,2026-09-10,12,development,accepted,Weather Company
+KXHIGHMIA-26SEP10,KXHIGHMIA,2026-09-10,15,development,accepted,Weather Company
+KXHIGHMIA-26SEP11,KXHIGHMIA,2026-09-11,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP11,KXHIGHMIA,2026-09-11,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP11,KXHIGHMIA,2026-09-11,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP12,KXHIGHMIA,2026-09-12,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP12,KXHIGHMIA,2026-09-12,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP12,KXHIGHMIA,2026-09-12,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP13,KXHIGHMIA,2026-09-13,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP13,KXHIGHMIA,2026-09-13,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP13,KXHIGHMIA,2026-09-13,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP14,KXHIGHMIA,2026-09-14,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP14,KXHIGHMIA,2026-09-14,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP14,KXHIGHMIA,2026-09-14,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP15,KXHIGHMIA,2026-09-15,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP15,KXHIGHMIA,2026-09-15,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP15,KXHIGHMIA,2026-09-15,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP16,KXHIGHMIA,2026-09-16,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP16,KXHIGHMIA,2026-09-16,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP16,KXHIGHMIA,2026-09-16,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP17,KXHIGHMIA,2026-09-17,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP17,KXHIGHMIA,2026-09-17,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP17,KXHIGHMIA,2026-09-17,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP18,KXHIGHMIA,2026-09-18,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP18,KXHIGHMIA,2026-09-18,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP18,KXHIGHMIA,2026-09-18,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP19,KXHIGHMIA,2026-09-19,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP19,KXHIGHMIA,2026-09-19,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP19,KXHIGHMIA,2026-09-19,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP20,KXHIGHMIA,2026-09-20,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP20,KXHIGHMIA,2026-09-20,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP20,KXHIGHMIA,2026-09-20,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP21,KXHIGHMIA,2026-09-21,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP21,KXHIGHMIA,2026-09-21,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP21,KXHIGHMIA,2026-09-21,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP22,KXHIGHMIA,2026-09-22,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP22,KXHIGHMIA,2026-09-22,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP22,KXHIGHMIA,2026-09-22,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP23,KXHIGHMIA,2026-09-23,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP23,KXHIGHMIA,2026-09-23,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP23,KXHIGHMIA,2026-09-23,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP24,KXHIGHMIA,2026-09-24,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP24,KXHIGHMIA,2026-09-24,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP24,KXHIGHMIA,2026-09-24,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP25,KXHIGHMIA,2026-09-25,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP25,KXHIGHMIA,2026-09-25,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP25,KXHIGHMIA,2026-09-25,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP26,KXHIGHMIA,2026-09-26,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP26,KXHIGHMIA,2026-09-26,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP26,KXHIGHMIA,2026-09-26,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP27,KXHIGHMIA,2026-09-27,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP27,KXHIGHMIA,2026-09-27,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP27,KXHIGHMIA,2026-09-27,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP28,KXHIGHMIA,2026-09-28,9,validation,accepted,Weather Company
+KXHIGHMIA-26SEP28,KXHIGHMIA,2026-09-28,12,validation,accepted,Weather Company
+KXHIGHMIA-26SEP28,KXHIGHMIA,2026-09-28,15,validation,accepted,Weather Company
+KXHIGHMIA-26SEP29,KXHIGHMIA,2026-09-29,9,test,accepted,Weather Company
+KXHIGHMIA-26SEP29,KXHIGHMIA,2026-09-29,12,test,accepted,Weather Company
+KXHIGHMIA-26SEP29,KXHIGHMIA,2026-09-29,15,test,accepted,Weather Company
+KXHIGHMIA-26SEP30,KXHIGHMIA,2026-09-30,9,test,accepted,Weather Company
+KXHIGHMIA-26SEP30,KXHIGHMIA,2026-09-30,12,test,accepted,Weather Company
+KXHIGHMIA-26SEP30,KXHIGHMIA,2026-09-30,15,test,accepted,Weather Company

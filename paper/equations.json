@@ -1,0 +1,110 @@
+[
+  {
+    "number": 1,
+    "caption": "Binary payoff",
+    "latex": "X_i(\\omega)=\\mathbf{1}\\{\\omega\\in A_i\\},\\qquad X_i^{N}(\\omega)=1-X_i(\\omega)",
+    "note": "A_i is the precisely defined event, not its abbreviated market title."
+  },
+  {
+    "number": 2,
+    "caption": "Complementary order-book quotes",
+    "latex": "a_i^Y=1-b_i^N,\\qquad a_i^N=1-b_i^Y",
+    "note": "Prices in dollars per unit-payout contract."
+  },
+  {
+    "number": 3,
+    "caption": "Quoted spread and midpoint",
+    "latex": "s_i=a_i^Y-b_i^Y,\\qquad m_i=(a_i^Y+b_i^Y)/2",
+    "note": "A midpoint is a descriptive reference, not an available execution price."
+  },
+  {
+    "number": 4,
+    "caption": "Displayed depth imbalance",
+    "latex": "I_i=(D_i^b-D_i^a)/(D_i^b+D_i^a)",
+    "note": "Snapshot imbalance; distinct from order-flow imbalance measured across order events."
+  },
+  {
+    "number": 5,
+    "caption": "Depth-weighted midpoint",
+    "latex": "\\widetilde m_i=(a_i^Y D_i^b+b_i^Y D_i^a)/(D_i^b+D_i^a)",
+    "note": "A descriptive weighting, not an estimated efficient-price model."
+  },
+  {
+    "number": 6,
+    "caption": "Depth-aware acquisition cost",
+    "latex": "C_i(q)=\\sum_{\\ell}p_{i\\ell}q_{i\\ell},\\qquad\\sum_{\\ell}q_{i\\ell}=q",
+    "note": "Use ascending asks and reject quantities exceeding displayed depth."
+  },
+  {
+    "number": 7,
+    "caption": "Quadratic taker fee before rounding",
+    "latex": "f_i=0.07M_i\\sum_{\\ell}q_{i\\ell}p_{i\\ell}(1-p_{i\\ell})",
+    "note": "Current schedule scenario; actual fee adds fill-level rounding and order rebates."
+  },
+  {
+    "number": 8,
+    "caption": "Fee and balance rounding",
+    "latex": "f_{\\ell}^{net}=\\lceil f_{\\ell}^{model}\\rceil_{10^{-6}}+r_{\\ell}-R_{\\ell}",
+    "note": "r is balance-alignment rounding; R is the order-accumulator rebate. See code for the recurrence."
+  },
+  {
+    "number": 9,
+    "caption": "Conditional probability coherence",
+    "latex": "\\sum_i b_i^Y\\leq1\\leq\\sum_i a_i^Y",
+    "note": "Only for a verified mutually exclusive and exhaustive unit-payoff partition, before fees."
+  },
+  {
+    "number": 10,
+    "caption": "Statewise net payoff",
+    "latex": "\\Pi(\\omega;\\mathbf q)=\\sum_i X_i(\\omega)q_i-\\sum_i[C_i(q_i)+F_i(q_i)]",
+    "note": "A guarantee depends on covering every contractually possible payout state."
+  },
+  {
+    "number": 11,
+    "caption": "Finite-state portfolio programme",
+    "latex": "\\max_{\\mathbf q,g}g\\quad\\mathrm{s.t.}\\quad A\\mathbf q-\\mathbf c^T\\mathbf q\\,\\mathbf1\\geq g\\mathbf1,\\quad0\\leq\\mathbf q\\leq\\mathbf d,\\quad\\mathbf c^T\\mathbf q\\leq B",
+    "note": "Continuous screening relaxation; recheck rounded sizes and exact costs after optimisation."
+  },
+  {
+    "number": 12,
+    "caption": "Market-derived baseline",
+    "latex": "p_i=\\max(m_i,\\epsilon)/\\sum_j\\max(m_j,\\epsilon)",
+    "note": "Normalised reference on the observed single-winner event universe; epsilon = 0.0001."
+  },
+  {
+    "number": 13,
+    "caption": "Probability temperature calibration",
+    "latex": "\\widehat p_i(T)=\\frac{\\exp(\\log p_i/T)}{\\sum_j\\exp(\\log p_j/T)}",
+    "note": "T is fitted on development outcomes; the model choice is made on validation loss."
+  },
+  {
+    "number": 14,
+    "caption": "Multiclass logarithmic loss",
+    "latex": "L_{\\log}=-\\frac1N\\sum_e\\log\\widehat p_{e,y_e}",
+    "note": "Lower is better; natural logarithms give nats per event."
+  },
+  {
+    "number": 15,
+    "caption": "Multiclass Brier score",
+    "latex": "L_B=\\frac1N\\sum_e\\sum_i(\\widehat p_{ei}-\\mathbf1\\{y_e=i\\})^2",
+    "note": "Sum across event outcomes; lower is better."
+  },
+  {
+    "number": 16,
+    "caption": "Model-based expected edge",
+    "latex": "\\widehat V_i(q)=q\\widehat p_i-C_i(q)-F_i(q)",
+    "note": "A probabilistic expected value, not a guaranteed payoff."
+  },
+  {
+    "number": 17,
+    "caption": "Date-paired score difference",
+    "latex": "\\overline\\Delta=\\frac1D\\sum_d\\frac1{n_d}\\sum_{e\\in d}(L_e^{model}-L_e^{base})",
+    "note": "Negative favours the model. Moving-block bootstrap resamples paired calendar-date means."
+  },
+  {
+    "number": 18,
+    "caption": "Synthetic complete-basket fill probability",
+    "latex": "\\Pr(\\mathrm{all\\ legs\\ fill})=\\rho^K",
+    "note": "Independent equal-probability fills are an illustrative stress assumption only."
+  }
+]

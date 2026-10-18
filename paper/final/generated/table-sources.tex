@@ -1,0 +1,12 @@
+\begin{table}[htbp]\centering
+{\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{1.18}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}L{27mm}L{63mm}X@{}}\toprule\rowcolor{tablehead}
+\textbf{Material} & \textbf{Public REST route} & \textbf{Analytical role} \\ \midrule
+Market metadata & \texttt{/markets};\newline\texttt{/historical/markets} & Event membership, strikes, settled outcomes and rule text. \\ \arrayrulecolor{tablerule}\hline
+Hourly candles & \texttt{/markets/candlesticks}; historical market candles & Completed-hour bid and ask summaries; no historical depth. \\ \arrayrulecolor{tablerule}\hline
+Live books & \texttt{/markets/orderbooks} & Repeated fixed-point bids and quantities; request timing recorded. \\ \arrayrulecolor{tablerule}\hline
+Fee metadata & \texttt{/series/\{series\}}; fee-change records & Series fee type and multiplier; dated historical applicability remains uncertified. \\ \arrayrulecolor{tablerule}\hline
+\arrayrulecolor{black}\bottomrule\end{tabularx}}
+\caption[Acquisition routes and analytical roles]{Acquisition routes and analytical roles.}\label{tab:sources}
+\vspace{2pt}{\centering\fontsize{9.3}{11.5}\selectfont Base endpoint: \url{https://external-api.kalshi.com/trade-api/v2}. All research collection uses GET requests.\par}
+\end{table}

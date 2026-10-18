@@ -1,0 +1,13 @@
+\begin{table}[htbp]\centering
+{\fontsize{9.4}{12}\selectfont\renewcommand{\arraystretch}{1.18}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}C{23mm}C{25mm}C{26mm}C{29mm}C{26mm}X@{}}\toprule\rowcolor{tablehead}
+\textbf{Per-leg fill} & \textbf{All filled} & \textbf{Loss, base} & \textbf{Mean, base (\$)} & \textbf{Loss, +1c} & \textbf{Mean, +1c (\$)} \\ \midrule
+0.50 & 1.5\% & 48.5\% & 0.0236 & 49.9\% & -0.0064 \\ \arrayrulecolor{tablerule}\hline
+0.70 & 11.7\% & 29.6\% & 0.0363 & 41.3\% & -0.0057 \\ \arrayrulecolor{tablerule}\hline
+0.85 & 37.2\% & 15.2\% & 0.0391 & 52.4\% & -0.0118 \\ \arrayrulecolor{tablerule}\hline
+0.95 & 73.1\% & 5.1\% & 0.0434 & 78.2\% & -0.0135 \\ \arrayrulecolor{tablerule}\hline
+1.00 & 100.0\% & 0.0\% & 0.0465 & 100.0\% & -0.0135 \\ \arrayrulecolor{tablerule}\hline
+\arrayrulecolor{black}\bottomrule\end{tabularx}}
+\caption[Synthetic six-leg execution stress]{Synthetic six-leg execution stress.}\label{tab:stress}
+\vspace{2pt}{\centering\fontsize{9.3}{11.5}\selectfont 20,000 draws per fill setting, paired across entry-cost scenarios. +1c adds \$0.01 per filled leg while retaining the base raw fee. No empirical fill probability is estimated.\par}
+\end{table}

@@ -1,0 +1,14 @@
+\begin{table}[htbp]\centering
+{\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{1.18}\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}L{37mm}L{44mm}C{40mm}X@{}}\toprule\rowcolor{tablehead}
+\textbf{Sample} & \textbf{Probability vector} & \textbf{Log loss (nats)} & \textbf{Brier score} \\ \midrule
+Development & Baseline & 0.956481 & 0.553895 \\ \arrayrulecolor{tablerule}\hline
+Development & Candidate & 0.956092 & 0.552713 \\ \arrayrulecolor{tablerule}\hline
+Validation & Baseline & 0.813803 & 0.464422 \\ \arrayrulecolor{tablerule}\hline
+Validation & Candidate & 0.819043 & 0.465765 \\ \arrayrulecolor{tablerule}\hline
+Test & Baseline & 0.718589 & 0.408273 \\ \arrayrulecolor{tablerule}\hline
+Test & Candidate & 0.722152 & 0.409355 \\ \arrayrulecolor{tablerule}\hline
+\arrayrulecolor{black}\bottomrule\end{tabularx}}
+\caption[Primary probability scores at noon]{Primary probability scores at noon.}\label{tab:scores}
+\vspace{2pt}{\centering\fontsize{9.3}{11.5}\selectfont Candidate $T=1.034401$; validation selected $T=1$, so the selected model equals the baseline. Lower scores are better.\par}
+\end{table}

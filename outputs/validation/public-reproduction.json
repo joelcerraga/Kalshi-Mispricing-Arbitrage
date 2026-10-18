@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "analytical_tests": 45,
+  "network_requests": 0,
+  "frozen_implementation_hashes_verified": 3,
+  "synthetic_results": {
+    "scenarios": 6,
+    "replications_per_scenario": 500,
+    "scenario_evaluations": 3000,
+    "all_checks_passed": true,
+    "stress_scenarios": 20,
+    "draws_per_fill_setting": 20000,
+    "paired_draws_across_costs": true,
+    "seed": 20261017
+  },
+  "scope": "Software and synthetic reproduction; no new empirical results"
+}

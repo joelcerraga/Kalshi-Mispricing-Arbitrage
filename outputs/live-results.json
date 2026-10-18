@@ -1,0 +1,15 @@
+{
+  "rounds": 20,
+  "book_snapshots": 720,
+  "distinct_markets": 36,
+  "distinct_events": 6,
+  "start": "2026-10-17T20:29:46.177164+00:00",
+  "end": "2026-10-17T20:32:32.296365+00:00",
+  "median_spread": 0.01,
+  "median_response_seconds": 5.3074414999999995,
+  "conditional_basket_candidates": 0,
+  "strict_basket_candidates": 0,
+  "positive_lp_relaxations": 0,
+  "positive_rechecked_lp": 0,
+  "interpretation": "short live pilot; REST round-trip spans are observation uncertainty, not order execution latency"
+}

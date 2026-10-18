@@ -1,0 +1,27 @@
+symbol,meaning
+X_i,Contract payoff in dollars
+omega,Resolution state
+A_i,Event defined by contract i
+b_i,Best bid
+a_i,Best ask
+s_i,Quoted spread
+m_i,Midpoint
+"D_i^b, D_i^a",Displayed bid and ask quantity
+I_i,Displayed depth imbalance
+q_i,Contract quantity
+p_i,"Market-derived probability; p_i,l denotes fill price only when indexed by level"
+C_i,Purchase cost
+F_i,Rounded fee
+M_i,Series fee multiplier
+Pi,Portfolio net payoff
+A,State-by-contract payoff matrix
+B,Cost budget
+g,Worst-state net payoff
+T,Calibration temperature
+epsilon,Probability floor
+y_e,Observed winning outcome
+N,Number of events
+D,Number of dates
+Delta,Paired loss difference
+rho,Synthetic per-leg fill probability
+K,Number of basket legs

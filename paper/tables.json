@@ -1,0 +1,98 @@
+[
+  {
+    "notebook": "00_questions_contracts_and_design",
+    "caption": "Table N00.1. Contract audits across historical and live event groups."
+  },
+  {
+    "notebook": "00_questions_contracts_and_design",
+    "caption": "Table N00.2. Primary noon event coverage by sample."
+  },
+  {
+    "notebook": "01_public_api_data_and_provenance",
+    "caption": "Table N01.1. Acquired series and current fee metadata."
+  },
+  {
+    "notebook": "01_public_api_data_and_provenance",
+    "caption": "Table N01.2. Inclusion and missing-hour exclusions."
+  },
+  {
+    "notebook": "02_order_books_fees_and_liquidity",
+    "caption": "Table N02.1. Complement reconstruction and displayed-depth metrics."
+  },
+  {
+    "notebook": "02_order_books_fees_and_liquidity",
+    "caption": "Table N02.2. Fee rounding and the order accumulator at a 0.50 price."
+  },
+  {
+    "notebook": "02_order_books_fees_and_liquidity",
+    "caption": "Table N02.3. Live collection summary; spans describe HTTP observation uncertainty."
+  },
+  {
+    "notebook": "03_payoff_constraints_and_arbitrage",
+    "caption": "Table N03.1. A missing payoff state can create a false arbitrage certificate."
+  },
+  {
+    "notebook": "03_payoff_constraints_and_arbitrage",
+    "caption": "Table N03.2. Known-truth outcomes from 3,000 synthetic scenario evaluations."
+  },
+  {
+    "notebook": "03_payoff_constraints_and_arbitrage",
+    "caption": "Table N03.3. Distinct screens; historical and live rows are not one execution funnel."
+  },
+  {
+    "notebook": "04_probability_modelling_and_selection",
+    "caption": "Table N04.1. Recomputed development fit and frozen validation choice."
+  },
+  {
+    "notebook": "04_probability_modelling_and_selection",
+    "caption": "Table N04.2. Synthetic calibration sensitivity; every column sums to one."
+  },
+  {
+    "notebook": "05_chronological_validation_and_value",
+    "caption": "Table N05.1. Independently recomputed held-out noon scores."
+  },
+  {
+    "notebook": "05_chronological_validation_and_value",
+    "caption": "Table N05.2. Paired date-block interval for the rejected candidate, conditional on the frozen fit."
+  },
+  {
+    "notebook": "05_chronological_validation_and_value",
+    "caption": "Table N05.3. Exploratory candle-ask value diagnostic; no execution claim."
+  },
+  {
+    "notebook": "06_execution_risk_and_research_reflections",
+    "caption": "Table N06.1. Synthetic all-leg completion under independent fills."
+  },
+  {
+    "notebook": "06_execution_risk_and_research_reflections",
+    "caption": "Table N06.2. Simulated incomplete-basket outcomes at the original entry prices."
+  },
+  {
+    "notebook": "06_execution_risk_and_research_reflections",
+    "caption": "Table N06.3. Actual failures, mitigations and remaining limits."
+  },
+  {
+    "notebook": "06_execution_risk_and_research_reflections",
+    "caption": "Table N06.4. Later-period noon scores by city; descriptive subgroup comparison."
+  },
+  {
+    "notebook": "07_synthesis_and_publication_registers",
+    "caption": "Table N07.1. Research evidence inventory."
+  },
+  {
+    "notebook": "07_synthesis_and_publication_registers",
+    "caption": "Table N07.2. Numbered equation register for final paper assembly."
+  },
+  {
+    "notebook": "07_synthesis_and_publication_registers",
+    "caption": "Table N07.3. Abbreviations."
+  },
+  {
+    "notebook": "07_synthesis_and_publication_registers",
+    "caption": "Table N07.4. Mathematical notation."
+  },
+  {
+    "notebook": "07_synthesis_and_publication_registers",
+    "caption": "Table N07.5. Figure register."
+  }
+]

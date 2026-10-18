@@ -1,0 +1,561 @@
+{
+  "status": "passed",
+  "pages": 39,
+  "a4_portrait_pages": 39,
+  "numbered_exhibits": {
+    "fig:": 13,
+    "tab:": 17,
+    "eq:": 18,
+    "code:": 3
+  },
+  "references": 15,
+  "all_register_page_targets_verified": true,
+  "no_overfull_boxes_or_undefined_references": true,
+  "text_inside_page_margins": true,
+  "frozen_files_unchanged": 6,
+  "caption_line_centre_offsets_pt": [
+    {
+      "page": 8,
+      "offset_pt": -0.159,
+      "text": "Table 2. Mathematical symbols."
+    },
+    {
+      "page": 11,
+      "offset_pt": -0.159,
+      "text": "Table 3. Empirical market universe."
+    },
+    {
+      "page": 12,
+      "offset_pt": -0.159,
+      "text": "Table 4. Acquisition routes and analytical roles."
+    },
+    {
+      "page": 13,
+      "offset_pt": -0.159,
+      "text": "Table 5. Chronological samples and completed-hour coverage."
+    },
+    {
+      "page": 13,
+      "offset_pt": -0.002,
+      "text": "Figure 1. Coverage of complete six-contract panels at 12:00 local time"
+    },
+    {
+      "page": 14,
+      "offset_pt": -0.159,
+      "text": "Table 6. Payoff partition and settlement audit."
+    },
+    {
+      "page": 15,
+      "offset_pt": -0.001,
+      "text": "Equation 2. Complementary order-book quotes"
+    },
+    {
+      "page": 15,
+      "offset_pt": -0.006,
+      "text": "Equation 3. Quoted spread and midpoint"
+    },
+    {
+      "page": 15,
+      "offset_pt": -0.005,
+      "text": "Equation 4. Displayed depth imbalance"
+    },
+    {
+      "page": 15,
+      "offset_pt": -0.006,
+      "text": "Equation 5. Depth-weighted midpoint"
+    },
+    {
+      "page": 16,
+      "offset_pt": -0.001,
+      "text": "Equation 6. Depth-aware acquisition cost"
+    },
+    {
+      "page": 16,
+      "offset_pt": -0.006,
+      "text": "Equation 7. Quadratic taker fee before rounding"
+    },
+    {
+      "page": 16,
+      "offset_pt": -0.006,
+      "text": "Equation 8. Fee and balance rounding"
+    },
+    {
+      "page": 17,
+      "offset_pt": -0.164,
+      "text": "Table 7. Illustrative fee arithmetic."
+    },
+    {
+      "page": 17,
+      "offset_pt": -0.006,
+      "text": "Equation 9. Conditional probability coherence"
+    },
+    {
+      "page": 18,
+      "offset_pt": -0.001,
+      "text": "Equation 10. Statewise net payoff"
+    },
+    {
+      "page": 18,
+      "offset_pt": -0.001,
+      "text": "Equation 11. Finite-state portfolio programme"
+    },
+    {
+      "page": 19,
+      "offset_pt": -0.001,
+      "text": "Equation 12. Market-derived baseline"
+    },
+    {
+      "page": 19,
+      "offset_pt": -0.001,
+      "text": "Equation 13. Probability temperature calibration"
+    },
+    {
+      "page": 20,
+      "offset_pt": -0.001,
+      "text": "Equation 14. Multiclass logarithmic loss"
+    },
+    {
+      "page": 20,
+      "offset_pt": -0.001,
+      "text": "Equation 15. Multiclass Brier score"
+    },
+    {
+      "page": 20,
+      "offset_pt": -0.001,
+      "text": "Equation 16. Model-based expected edge"
+    },
+    {
+      "page": 20,
+      "offset_pt": -0.006,
+      "text": "Equation 17. Date-paired score difference"
+    },
+    {
+      "page": 21,
+      "offset_pt": -0.006,
+      "text": "Figure 2. Historical spreads from accepted noon events. Candle-close q"
+    },
+    {
+      "page": 21,
+      "offset_pt": -0.002,
+      "text": "accompanying depth or fill guarantee."
+    },
+    {
+      "page": 21,
+      "offset_pt": -0.159,
+      "text": "Table 8. Historical conditional basket discrepancies."
+    },
+    {
+      "page": 22,
+      "offset_pt": 0.004,
+      "text": "Figure 3. Conditional integer-resolution basket gaps from hourly quote"
+    },
+    {
+      "page": 22,
+      "offset_pt": -0.002,
+      "text": "establish historical execution or contractual arbitrage."
+    },
+    {
+      "page": 22,
+      "offset_pt": -0.169,
+      "text": "Table 9. Primary probability scores at noon."
+    },
+    {
+      "page": 23,
+      "offset_pt": 1.023,
+      "text": "Figure 4. Held-out scores for the market-derived baseline and the reje"
+    },
+    {
+      "page": 23,
+      "offset_pt": -0.002,
+      "text": "Lower is better; validation selected the baseline."
+    },
+    {
+      "page": 24,
+      "offset_pt": -0.0,
+      "text": "Figure 5. Pooled reliability bins on held-out events. Contracts within"
+    },
+    {
+      "page": 24,
+      "offset_pt": 0.003,
+      "text": "curve is descriptive, not an independent-bin significance test."
+    },
+    {
+      "page": 24,
+      "offset_pt": -0.159,
+      "text": "Table 10. Paired date-block sensitivity for the rejected candidate."
+    },
+    {
+      "page": 25,
+      "offset_pt": -0.001,
+      "text": "Figure 6. Paired date-block confidence intervals for the rejected cand"
+    },
+    {
+      "page": 25,
+      "offset_pt": 0.0,
+      "text": "differences favour the candidate. The selected method is the baseline "
+    },
+    {
+      "page": 25,
+      "offset_pt": -0.164,
+      "text": "Table 11. Later-period sensitivity to observation time."
+    },
+    {
+      "page": 25,
+      "offset_pt": -0.159,
+      "text": "Table 12. Later-period scores by city."
+    },
+    {
+      "page": 26,
+      "offset_pt": -0.159,
+      "text": "Table 13. Recorded live-pilot audit."
+    },
+    {
+      "page": 27,
+      "offset_pt": 0.004,
+      "text": "Figure 7. Displayed-depth purchase costs for the final snapshot whose "
+    },
+    {
+      "page": 27,
+      "offset_pt": -0.001,
+      "text": "selection rule is descriptive and does not use future returns."
+    },
+    {
+      "page": 27,
+      "offset_pt": 0.004,
+      "text": "Figure 8. Snapshot imbalance and the next observed midpoint change in "
+    },
+    {
+      "page": 27,
+      "offset_pt": 0.003,
+      "text": "are not order-flow events or independent trading trials."
+    },
+    {
+      "page": 28,
+      "offset_pt": -0.159,
+      "text": "Table 14. Known-truth synthetic screening checks."
+    },
+    {
+      "page": 29,
+      "offset_pt": -0.0,
+      "text": "Figure 9. Six synthetic mechanisms, 500 replications each. Passing kno"
+    },
+    {
+      "page": 29,
+      "offset_pt": 0.003,
+      "text": "selected logic, not real-market profitability."
+    },
+    {
+      "page": 29,
+      "offset_pt": 0.119,
+      "text": "Equation 18. Synthetic complete-basket fill probability"
+    },
+    {
+      "page": 29,
+      "offset_pt": -0.159,
+      "text": "Table 15. Synthetic six-leg execution stress."
+    },
+    {
+      "page": 30,
+      "offset_pt": -0.0,
+      "text": "Figure 10. Synthetic independent leg-fill stresses. A positive expecte"
+    },
+    {
+      "page": 30,
+      "offset_pt": -0.185,
+      "text": "when an incomplete basket remains exposed."
+    },
+    {
+      "page": 32,
+      "offset_pt": -0.164,
+      "text": "Table 16. Research and presentation verification."
+    },
+    {
+      "page": 35,
+      "offset_pt": -0.159,
+      "text": "Table 17. Executed notebook sequence."
+    },
+    {
+      "page": 36,
+      "offset_pt": 0.084,
+      "text": "Code listing 1. Fill rounding and rebate accumulator"
+    },
+    {
+      "page": 37,
+      "offset_pt": -0.006,
+      "text": "Code listing 2. Statewise portfolio screening"
+    },
+    {
+      "page": 37,
+      "offset_pt": -0.006,
+      "text": "Code listing 3. Development-only temperature fitting"
+    },
+    {
+      "page": 38,
+      "offset_pt": 0.162,
+      "text": "Figure 11. Recorded order-book depth for KXHIGHNY-26OCT18-B56.5. Each "
+    },
+    {
+      "page": 38,
+      "offset_pt": 0.003,
+      "text": "observation; the surface between observations is not reconstructed."
+    },
+    {
+      "page": 39,
+      "offset_pt": -0.005,
+      "text": "Figure 12. Calibration sensitivity for KXHIGHNY-26SEP29, the first lat"
+    },
+    {
+      "page": 39,
+      "offset_pt": -0.138,
+      "text": "varied for illustration; the selected research model remains T = 1."
+    },
+    {
+      "page": 39,
+      "offset_pt": 0.003,
+      "text": "Figure 13. Synthetic six-leg loss probability under independent fills,"
+    },
+    {
+      "page": 39,
+      "offset_pt": -0.0,
+      "text": "and raw quadratic fees. This analytical surface is not an empirical re"
+    }
+  ],
+  "pages_audit": [
+    {
+      "physical_page": 1,
+      "printed_label": "1",
+      "words": 25,
+      "body_bottom_pt": 536.86
+    },
+    {
+      "physical_page": 2,
+      "printed_label": "i",
+      "words": 338,
+      "body_bottom_pt": 606.4
+    },
+    {
+      "physical_page": 3,
+      "printed_label": "ii",
+      "words": 904,
+      "body_bottom_pt": 774.68
+    },
+    {
+      "physical_page": 4,
+      "printed_label": "iii",
+      "words": 619,
+      "body_bottom_pt": 477.24
+    },
+    {
+      "physical_page": 5,
+      "printed_label": "iv",
+      "words": 950,
+      "body_bottom_pt": 683.74
+    },
+    {
+      "physical_page": 6,
+      "printed_label": "v",
+      "words": 754,
+      "body_bottom_pt": 543.33
+    },
+    {
+      "physical_page": 7,
+      "printed_label": "vi",
+      "words": 91,
+      "body_bottom_pt": 434.78
+    },
+    {
+      "physical_page": 8,
+      "printed_label": "vii",
+      "words": 366,
+      "body_bottom_pt": 727.32
+    },
+    {
+      "physical_page": 9,
+      "printed_label": "1",
+      "words": 422,
+      "body_bottom_pt": 782.77
+    },
+    {
+      "physical_page": 10,
+      "printed_label": "2",
+      "words": 445,
+      "body_bottom_pt": 767.46
+    },
+    {
+      "physical_page": 11,
+      "printed_label": "3",
+      "words": 391,
+      "body_bottom_pt": 745.91
+    },
+    {
+      "physical_page": 12,
+      "printed_label": "4",
+      "words": 416,
+      "body_bottom_pt": 767.14
+    },
+    {
+      "physical_page": 13,
+      "printed_label": "5",
+      "words": 300,
+      "body_bottom_pt": 738.01
+    },
+    {
+      "physical_page": 14,
+      "printed_label": "6",
+      "words": 392,
+      "body_bottom_pt": 782.77
+    },
+    {
+      "physical_page": 15,
+      "printed_label": "7",
+      "words": 346,
+      "body_bottom_pt": 782.77
+    },
+    {
+      "physical_page": 16,
+      "printed_label": "8",
+      "words": 365,
+      "body_bottom_pt": 764.89
+    },
+    {
+      "physical_page": 17,
+      "printed_label": "9",
+      "words": 327,
+      "body_bottom_pt": 712.06
+    },
+    {
+      "physical_page": 18,
+      "printed_label": "10",
+      "words": 405,
+      "body_bottom_pt": 740.94
+    },
+    {
+      "physical_page": 19,
+      "printed_label": "11",
+      "words": 304,
+      "body_bottom_pt": 653.1
+    },
+    {
+      "physical_page": 20,
+      "printed_label": "12",
+      "words": 388,
+      "body_bottom_pt": 782.77
+    },
+    {
+      "physical_page": 21,
+      "printed_label": "13",
+      "words": 274,
+      "body_bottom_pt": 774.5
+    },
+    {
+      "physical_page": 22,
+      "printed_label": "14",
+      "words": 268,
+      "body_bottom_pt": 781.27
+    },
+    {
+      "physical_page": 23,
+      "printed_label": "15",
+      "words": 364,
+      "body_bottom_pt": 782.77
+    },
+    {
+      "physical_page": 24,
+      "printed_label": "16",
+      "words": 285,
+      "body_bottom_pt": 763.3
+    },
+    {
+      "physical_page": 25,
+      "printed_label": "17",
+      "words": 160,
+      "body_bottom_pt": 754.02
+    },
+    {
+      "physical_page": 26,
+      "printed_label": "18",
+      "words": 409,
+      "body_bottom_pt": 777.15
+    },
+    {
+      "physical_page": 27,
+      "printed_label": "19",
+      "words": 216,
+      "body_bottom_pt": 737.11
+    },
+    {
+      "physical_page": 28,
+      "printed_label": "20",
+      "words": 341,
+      "body_bottom_pt": 736.02
+    },
+    {
+      "physical_page": 29,
+      "printed_label": "21",
+      "words": 302,
+      "body_bottom_pt": 782.52
+    },
+    {
+      "physical_page": 30,
+      "printed_label": "22",
+      "words": 287,
+      "body_bottom_pt": 764.26
+    },
+    {
+      "physical_page": 31,
+      "printed_label": "23",
+      "words": 451,
+      "body_bottom_pt": 782.77
+    },
+    {
+      "physical_page": 32,
+      "printed_label": "24",
+      "words": 372,
+      "body_bottom_pt": 772.54
+    },
+    {
+      "physical_page": 33,
+      "printed_label": "25",
+      "words": 251,
+      "body_bottom_pt": 496.03
+    },
+    {
+      "physical_page": 34,
+      "printed_label": "26",
+      "words": 312,
+      "body_bottom_pt": 694.72
+    },
+    {
+      "physical_page": 35,
+      "printed_label": "27",
+      "words": 359,
+      "body_bottom_pt": 764.44
+    },
+    {
+      "physical_page": 36,
+      "printed_label": "28",
+      "words": 252,
+      "body_bottom_pt": 669.52
+    },
+    {
+      "physical_page": 37,
+      "printed_label": "29",
+      "words": 279,
+      "body_bottom_pt": 774.03
+    },
+    {
+      "physical_page": 38,
+      "printed_label": "30",
+      "words": 182,
+      "body_bottom_pt": 626.23
+    },
+    {
+      "physical_page": 39,
+      "printed_label": "31",
+      "words": 169,
+      "body_bottom_pt": 764.58
+    }
+  ],
+  "visual_review_completed": true,
+  "pdf_sha256": "51dc02fe2cb0293abe52a782159f5d98ab13e5f3cb6161cd59fac9f1c9090f79"
+}

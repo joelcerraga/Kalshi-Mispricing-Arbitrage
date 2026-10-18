@@ -1,0 +1,7 @@
+scenario,replications,accuracy,eligible_rate
+asynchronous,500,1.0,0.0
+coherent,500,1.0,0.0
+exceptional_settlement,500,1.0,0.0
+fees_remove_gap,500,1.0,0.0
+insufficient_depth,500,1.0,0.0
+true_gap,500,1.0,1.0

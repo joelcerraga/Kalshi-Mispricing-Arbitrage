@@ -1,0 +1,72 @@
+[
+  {
+    "id": "avellaneda2008",
+    "harvard": "Avellaneda, M. and Stoikov, S. (2008) ‘High-frequency trading in a limit order book’, Quantitative Finance, 8(3), pp. 217–224. doi: 10.1080/14697680701381228.",
+    "url": "https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf"
+  },
+  {
+    "id": "boyd2004",
+    "harvard": "Boyd, S. and Vandenberghe, L. (2004) Convex optimization. Cambridge: Cambridge University Press. doi: 10.1017/CBO9780511804441.",
+    "url": "https://web.stanford.edu/~boyd/cvxbook/"
+  },
+  {
+    "id": "brier1950",
+    "harvard": "Brier, G.W. (1950) ‘Verification of forecasts expressed in terms of probability’, Monthly Weather Review, 78(1), pp. 1–3. doi: 10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2.",
+    "url": "https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml"
+  },
+  {
+    "id": "cont2014",
+    "harvard": "Cont, R., Kukanov, A. and Stoikov, S. (2014) ‘The price impact of order book events’, Journal of Financial Econometrics, 12(1), pp. 47–88. doi: 10.1093/jjfinec/nbt003.",
+    "url": "https://academic.oup.com/jfec/article-abstract/12/1/47/816163"
+  },
+  {
+    "id": "glosten1985",
+    "harvard": "Glosten, L.R. and Milgrom, P.R. (1985) ‘Bid, ask and transaction prices in a specialist market with heterogeneously informed traders’, Journal of Financial Economics, 14(1), pp. 71–100. doi: 10.1016/0304-405X(85)90044-3.",
+    "url": "https://business.columbia.edu/faculty/research/bid-ask-and-transaction-prices-specialist-market-heterogeneously-informed-traders"
+  },
+  {
+    "id": "gneiting2007",
+    "harvard": "Gneiting, T. and Raftery, A.E. (2007) ‘Strictly proper scoring rules, prediction, and estimation’, Journal of the American Statistical Association, 102(477), pp. 359–378. doi: 10.1198/016214506000001437.",
+    "url": "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf"
+  },
+  {
+    "id": "guo2017",
+    "harvard": "Guo, C., Pleiss, G., Sun, Y. and Weinberger, K.Q. (2017) ‘On calibration of modern neural networks’, Proceedings of the 34th International Conference on Machine Learning, 70, pp. 1321–1330. Available at: https://proceedings.mlr.press/v70/guo17a.html (Accessed: 17 October 2026).",
+    "url": "https://proceedings.mlr.press/v70/guo17a.html"
+  },
+  {
+    "id": "hasbrouck2007",
+    "harvard": "Hasbrouck, J. (2007) Empirical market microstructure: The institutions, economics, and econometrics of securities trading. New York: Oxford University Press. doi: 10.1093/oso/9780195301649.001.0001.",
+    "url": "https://academic.oup.com/book/52241"
+  },
+  {
+    "id": "kunsch1989",
+    "harvard": "Künsch, H.R. (1989) ‘The jackknife and the bootstrap for general stationary observations’, The Annals of Statistics, 17(3), pp. 1217–1241. doi: 10.1214/aos/1176347265.",
+    "url": "https://people.math.ethz.ch/~hkuensch/papers/"
+  },
+  {
+    "id": "wolfers2006",
+    "harvard": "Wolfers, J. and Zitzewitz, E. (2006) Interpreting prediction market prices as probabilities. NBER Working Paper No. 12200. Cambridge, MA: National Bureau of Economic Research. doi: 10.3386/w12200.",
+    "url": "https://www.nber.org/papers/w12200"
+  },
+  {
+    "id": "kalshi2026a",
+    "harvard": "Kalshi (2026a) API documentation. Available at: https://docs.kalshi.com/ (Accessed: 17 October 2026).",
+    "url": "https://docs.kalshi.com/"
+  },
+  {
+    "id": "kalshi2026b",
+    "harvard": "Kalshi (2026b) Fee schedule. 7 July. Available at: https://kalshi.com/docs/kalshi-fee-schedule.pdf (Accessed: 17 October 2026).",
+    "url": "https://kalshi.com/docs/kalshi-fee-schedule.pdf"
+  },
+  {
+    "id": "kalshi2026c",
+    "harvard": "Kalshi (2026c) GLOBALTEMPERATURE: Contract terms and conditions. Available at: https://assets.kalshi.com/contract_terms/GLOBALTEMPERATURE.pdf (Accessed: 17 October 2026).",
+    "url": "https://assets.kalshi.com/contract_terms/GLOBALTEMPERATURE.pdf"
+  },
+  {
+    "id": "kalshi2026d",
+    "harvard": "Kalshi (2026d) Developer agreement. Version 1.1. Available at: https://assets.kalshi.com/Kalshi-Developer-Agreement.pdf (Accessed: 17 October 2026).",
+    "url": "https://assets.kalshi.com/Kalshi-Developer-Agreement.pdf"
+  }
+]

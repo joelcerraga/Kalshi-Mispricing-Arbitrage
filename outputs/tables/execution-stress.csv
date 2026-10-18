@@ -1,0 +1,21 @@
+fill_probability,adverse_entry_cost,all_leg_fill_rate,loss_rate,mean_pnl,p05,draws,interpretation
+0.5,0.0,0.0146,0.48455,0.023594558750000053,-0.6356999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.5,0.01,0.0146,0.49915,-0.006419941249999975,-0.6757,20000,synthetic independent leg fills; no empirical fill calibration
+0.5,0.03,0.0146,0.49915,-0.06644894124999993,-0.7556999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.5,0.05,0.0146,0.57725,-0.12647794124999992,-0.8356999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.7,0.0,0.1168,0.29635,0.036250700000000066,-0.6356999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.7,0.01,0.1168,0.41315,-0.005709299999999964,-0.6757,20000,synthetic independent leg fills; no empirical fill calibration
+0.7,0.03,0.1168,0.41315,-0.0896292999999999,-0.7556999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.7,0.05,0.1168,0.6678,-0.17354929999999988,-0.8356999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.85,0.0,0.37235,0.1519,0.03910818000000008,-0.7946249999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.85,0.01,0.37235,0.52425,-0.011795819999999959,-0.844625,20000,synthetic independent leg fills; no empirical fill calibration
+0.85,0.03,0.37235,0.52425,-0.11360381999999986,-0.9446249999999998,20000,synthetic independent leg fills; no empirical fill calibration
+0.85,0.05,0.37235,0.8567,-0.21541181999999987,-1.044625,20000,synthetic independent leg fills; no empirical fill calibration
+0.95,0.0,0.73055,0.0514,0.0434108775000001,-0.6356999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.95,0.01,0.73055,0.78195,-0.013546122499999954,-0.6757,20000,synthetic independent leg fills; no empirical fill calibration
+0.95,0.03,0.73055,0.78195,-0.12746012249999986,-0.7556999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+0.95,0.05,0.73055,0.97775,-0.2413741224999998,-0.8356999999999999,20000,synthetic independent leg fills; no empirical fill calibration
+1.0,0.0,1.0,0.0,0.0464500000000001,0.0464500000000001,20000,synthetic independent leg fills; no empirical fill calibration
+1.0,0.01,1.0,1.0,-0.013549999999999951,-0.013549999999999951,20000,synthetic independent leg fills; no empirical fill calibration
+1.0,0.03,1.0,1.0,-0.13354999999999984,-0.13354999999999984,20000,synthetic independent leg fills; no empirical fill calibration
+1.0,0.05,1.0,1.0,-0.2535499999999997,-0.2535499999999997,20000,synthetic independent leg fills; no empirical fill calibration

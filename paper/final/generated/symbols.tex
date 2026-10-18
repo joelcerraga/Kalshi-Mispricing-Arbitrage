@@ -1,0 +1,52 @@
+{\fontsize{9.4}{11.1}\selectfont\renewcommand{\arraystretch}{1.12}\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}L{30mm}L{96mm}L{32mm}@{}}
+\toprule\rowcolor{tablehead}\textbf{Symbol} & \textbf{Meaning} & \textbf{Units} \\ \midrule
+\endfirsthead
+\toprule\rowcolor{tablehead}\textbf{Symbol} & \textbf{Meaning} & \textbf{Units} \\ \midrule
+\endhead
+\multicolumn{3}{r}{\fontsize{9}{11}\selectfont\itshape Continued on the next page}\\\endfoot
+\endlastfoot
+$i,j$ & Contract or outcome index & index \\ \arrayrulecolor{tablerule}\hline
+$e$ & Daily city event & index \\ \arrayrulecolor{tablerule}\hline
+$d$ & Calendar date & index \\ \arrayrulecolor{tablerule}\hline
+$\ell$ & Price level or enumerated fill & index \\ \arrayrulecolor{tablerule}\hline
+$\omega$ & Contract resolution state & state \\ \arrayrulecolor{tablerule}\hline
+$\Omega$ & Set of included resolution states & set \\ \arrayrulecolor{tablerule}\hline
+$A_i$ & Event specified by contract i & set \\ \arrayrulecolor{tablerule}\hline
+$X_i,X_i^N$ & YES and NO terminal payoffs & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$\mathbf1\{\cdot\}$ & Indicator of a true condition & 0 or 1 \\ \arrayrulecolor{tablerule}\hline
+$a_i^Y,a_i^N$ & Best YES and NO asks & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$b_i^Y,b_i^N$ & Best YES and NO bids & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$s_i,m_i$ & Quoted spread and midpoint & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$\widetilde m_i$ & Depth-weighted midpoint & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$D_i^b,D_i^a$ & Displayed quantity at the best bid and ask & contracts \\ \arrayrulecolor{tablerule}\hline
+$I_i$ & Snapshot depth imbalance & unitless \\ \arrayrulecolor{tablerule}\hline
+$q_i,q_{i\ell}$ & Total acquired quantity and quantity per fill & contracts \\ \arrayrulecolor{tablerule}\hline
+$p_{i\ell}$ & Acquisition price at level or fill ell & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$C_i(q_i)$ & Purchase cost excluding fees & USD \\ \arrayrulecolor{tablerule}\hline
+$f_i^{\rm raw}$ & Unrounded model fee for an order & USD \\ \arrayrulecolor{tablerule}\hline
+$F_i(q_i)$ & Total fee after rounding and rebates & USD \\ \arrayrulecolor{tablerule}\hline
+$M_i$ & Series fee multiplier & unitless \\ \arrayrulecolor{tablerule}\hline
+$u_\ell,t_\ell$ & Signed fill revenue and rounded trade fee & USD \\ \arrayrulecolor{tablerule}\hline
+$\delta$ & Target balance precision & USD \\ \arrayrulecolor{tablerule}\hline
+$r_\ell,R_\ell$ & Balance rounding and accumulator rebate & USD \\ \arrayrulecolor{tablerule}\hline
+$H_\ell$ & Carried rounding accumulator & USD \\ \arrayrulecolor{tablerule}\hline
+$\lceil x\rceil_h,\lfloor x\rfloor_h$ & Round x up or down to a multiple of h & same as x \\ \arrayrulecolor{tablerule}\hline
+$\Pi(\omega;\mathbf q)$ & Portfolio net payoff in a state & USD \\ \arrayrulecolor{tablerule}\hline
+$\mathbf A$ & State-by-position payoff matrix & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$\mathbf c,\mathbf d$ & Unit acquisition costs and displayed depth caps & USD / contract; contracts \\ \arrayrulecolor{tablerule}\hline
+$B,g$ & Budget and lowest statewise net payoff & USD \\ \arrayrulecolor{tablerule}\hline
+$p_{ei},\widehat p_{ei}$ & Baseline and model probability for an outcome & probability \\ \arrayrulecolor{tablerule}\hline
+$\epsilon$ & Positive midpoint floor (0.0001) & USD / contract \\ \arrayrulecolor{tablerule}\hline
+$T$ & Probability calibration temperature & unitless \\ \arrayrulecolor{tablerule}\hline
+$y_e$ & Observed winning outcome for event e & index \\ \arrayrulecolor{tablerule}\hline
+$N,D,n_d$ & Events, dates and accepted events on date d & counts \\ \arrayrulecolor{tablerule}\hline
+$L_{\log},L_B$ & Mean logarithmic loss and Brier score & nats; unitless \\ \arrayrulecolor{tablerule}\hline
+$\widehat V_i(q)$ & Model-based expected net payoff & USD \\ \arrayrulecolor{tablerule}\hline
+$\overline\Delta$ & Equal-date paired score difference & score units \\ \arrayrulecolor{tablerule}\hline
+$K,\rho$ & Basket legs and per-leg fill probability & count; probability \\ \arrayrulecolor{tablerule}\hline
+$J_i$ & Synthetic indicator that leg i fills & 0 or 1 \\ \arrayrulecolor{tablerule}\hline
+$\eta$ & Additional entry cost per filled synthetic leg & USD / contract \\ \arrayrulecolor{tablerule}\hline
+\arrayrulecolor{black}\bottomrule
+\caption[Mathematical symbols]{Mathematical symbols.}\label{tab:symbols}\\
+\end{longtable}}

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "M1",
+    "notebook": "notebooks/00_questions_contracts_and_design.ipynb",
+    "title": "00 \u00b7 Questions, contracts and research design",
+    "executed_code_cells": 3,
+    "status": "complete",
+    "seconds": 0.7038354873657227
+  },
+  {
+    "id": "M2",
+    "notebook": "notebooks/01_public_api_data_and_provenance.ipynb",
+    "title": "01 \u00b7 Public API data and provenance",
+    "executed_code_cells": 4,
+    "status": "complete",
+    "seconds": 0.4155750274658203
+  },
+  {
+    "id": "M3",
+    "notebook": "notebooks/02_order_books_fees_and_liquidity.ipynb",
+    "title": "02 \u00b7 Order books, fees and liquidity",
+    "executed_code_cells": 4,
+    "status": "complete",
+    "seconds": 0.011112451553344727
+  },
+  {
+    "id": "M4",
+    "notebook": "notebooks/03_payoff_constraints_and_arbitrage.ipynb",
+    "title": "03 \u00b7 Payoff constraints and arbitrage",
+    "executed_code_cells": 4,
+    "status": "complete",
+    "seconds": 0.017603158950805664
+  },
+  {
+    "id": "M5",
+    "notebook": "notebooks/04_probability_modelling_and_selection.ipynb",
+    "title": "04 \u00b7 Probability modelling and model selection",
+    "executed_code_cells": 4,
+    "status": "complete",
+    "seconds": 0.14182424545288086
+  },
+  {
+    "id": "M6",
+    "notebook": "notebooks/05_chronological_validation_and_value.ipynb",
+    "title": "05 \u00b7 Chronological validation and model-based value",
+    "executed_code_cells": 4,
+    "status": "complete",
+    "seconds": 0.06604170799255371
+  },
+  {
+    "id": "M7",
+    "notebook": "notebooks/06_execution_risk_and_research_reflections.ipynb",
+    "title": "06 \u00b7 Execution risk and research reflections",
+    "executed_code_cells": 4,
+    "status": "complete",
+    "seconds": 0.010940313339233398
+  },
+  {
+    "id": "M8",
+    "notebook": "notebooks/07_synthesis_and_publication_registers.ipynb",
+    "title": "07 \u00b7 Synthesis and publication registers",
+    "executed_code_cells": 4,
+    "status": "complete",
+    "seconds": 0.010509729385375977
+  }
+]

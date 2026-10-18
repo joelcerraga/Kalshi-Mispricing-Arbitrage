@@ -1,0 +1,326 @@
+\chapterstart{Introduction and research context}\label{sec:introduction}
+\subsection{Motivation}
+A binary prediction-market contract links a financial payoff to an observable event. This makes the market an appealing setting for probability modelling: a quoted price resembles a probability, and related contracts create arithmetic relationships that appear easy to test. The apparent simplicity can be misleading. A midpoint may be unavailable to trade, a displayed quantity may disappear, fees may exceed a small discrepancy, and apparently complementary market titles may conceal different settlement conditions.
+
+As \src{wolfers2006}{Wolfers and Zitzewitz (2006)} explain in \textit{Interpreting prediction market prices as probabilities}, the relationship between a market price and a probability depends on assumptions about beliefs and preferences. A price is therefore treated here as a market-derived reference rather than an observed physical probability. As \src{hasbrouck2007}{Hasbrouck (2007)} develops in \textit{Empirical market microstructure}, trading institutions and the process through which orders meet are central to the interpretation of observed prices. These ideas motivate an analysis that connects probability estimates to the actual cost and feasibility of acquiring positions.
+
+The project focuses on daily maximum-temperature markets in three US cities. Their recurring dates and ordered contract ranges make event membership, chronological evaluation and payoff relationships inspectable. The study does not generalise its settlement adapter to elections, sporting events or unrelated economic contracts. Those applications would require separate rule interpretation and outcome modelling.
+
+\subsection{Aim and research questions}
+The aim is to build and assess a reproducible engine that separates statistical disagreement from structural payoff inconsistencies and execution feasibility. Three questions organise the investigation. First, do related contracts exhibit price relationships that imply a positive lowest-state payoff under a stated contract model? Second, do such relationships survive fees, available depth and observation uncertainty? Third, can a calibrated probability model improve on a market-derived baseline when transferred to later dates?
+
+These questions require different evidence. Probability accuracy is evaluated against subsequent outcomes. Structural screening evaluates every state in a supplied payoff matrix. Execution feasibility concerns prices, quantities and fills at a common trading opportunity. An improvement in one layer cannot be substituted for evidence at another. In particular, a positive model-based expected value can occur alongside a negative payoff in some states.
+
+\subsection{Contribution and scope}
+The resulting Python engine collects public REST responses, reconstructs complementary quotes, calculates acquisition costs with decimal arithmetic and checks conditional baskets and general long-only payoff portfolios. It also fits a deliberately simple calibration model under a fixed chronological selection rule. Eight executed notebooks connect the calculations to data provenance, synthetic checks and research reflections. Three interactive explorers provide views of displayed depth, calibration sensitivity and synthetic execution risk.
+
+The empirical contribution is bounded. The historical analysis uses hourly quote summaries, while the repeated books come from one short session. No orders are submitted, no account credentials are required by the collector, and no fill history is available. The work consequently evaluates research logic and observed quote conditions rather than a deployed trading strategy. The paper preserves null and rejected results because they show where apparent opportunities fail the available evidence.
+
+\chapterstart{Research foundations and interpretation}\label{sec:foundations}
+\subsection{Prices, probabilities and market frictions}
+The probability interpretation is useful for organising forecasts, but it is not an assertion that every quoted midpoint is a calibrated belief. Risk preferences, heterogeneous information, trading constraints and the spread can all affect the price at which a position is available. The baseline in this study normalises the positive midpoints within a complete event. That transformation creates a probability vector for scoring; it does not make all transformed components executable prices.
+
+As \src{glosten1985}{Glosten and Milgrom (1985)} show in \textit{Bid, ask and transaction prices in a specialist market with heterogeneously informed traders}, asymmetric information can generate a bid--ask spread even under competitive liquidity provision. Their theoretical setting does not establish the cause of every spread in the present sample. It does explain why a midpoint comparison omits an economically meaningful trading friction. A buyer crosses to the ask and must additionally account for fees and the available size at that price.
+
+The research therefore uses the word \textit{mispricing} in two qualified senses. A model disagreement is a difference between an estimated probability and a cost of acquisition. A structural discrepancy is a relationship between several quotes that fails a stated payoff identity. Neither label, by itself, implies realised profit or a risk-free trading instruction.
+
+\subsection{Depth and order-flow evidence}
+As \src{cont2014}{Cont, Kukanov and Stoikov (2014)} report in \textit{The price impact of order book events}, order-book changes and available depth help explain short-horizon price movements. Their order-flow imbalance is constructed from order events. The present REST observations contain snapshots, so the implemented imbalance measures displayed quantities at the best bid and ask. The two measurements are not interchangeable.
+
+This distinction matters when interpreting the empirical scatter plot. Between two snapshots, orders can be entered, cancelled, modified or executed without appearing separately in the retained data. A correlation between snapshot imbalance and the next observed midpoint is therefore descriptive. It cannot identify a causal price-impact coefficient, reconstruct queue priority or establish a feasible high-frequency predictor.
+
+\subsection{Probability evaluation and execution}
+As \src{gneiting2007}{Gneiting and Raftery (2007)} explain in \textit{Strictly proper scoring rules, prediction, and estimation}, probability forecasts can be evaluated as full distributions. The study uses logarithmic loss and the multiclass Brier score, with the event as the scoring unit. A model is selected on validation loss before its later scores are calculated. This permits an honest rejection of an unnecessary calibration step.
+
+As \src{avellaneda2008}{Avellaneda and Stoikov (2008)} discuss in \textit{High-frequency trading in a limit order book}, execution and inventory exposure are integral to trading decisions. The present work does not estimate their market-making model. It uses a simpler synthetic experiment to demonstrate how separately filled legs can leave a residual directional position even when a fully acquired basket has a positive terminal margin.
+
+\chapterstart{Public data and chronological design}\label{sec:data}
+\subsection{Market universe and source roles}
+Table~\ref{tab:series} defines the empirical universe. The series were chosen for repeated daily events and ordered temperature ranges before model fitting. Each historical event contains six contracts. A contract is the individual range or tail claim, while an event is the city-date outcome shared by those contracts. These units must remain distinct when counting observations.
+
+\paperTable{series}
+
+As the \src{kalshi2026a}{Kalshi (2026a)} API documentation describes, selected market-data routes are publicly readable without authentication. Table~\ref{tab:sources} records the roles of the routes used here. The collection code issues GET requests and retains request timing, response metadata and parsed bodies. It contains no order-submission method. Technical access and permission to retain or publish the returned data are separate matters, discussed in Section~\ref{sec:rights}.
+
+\paperTable{sources}
+
+Current and archived market records are combined and deduplicated by ticker before selecting the 90-date window. This avoids interpreting the current endpoint's retention boundary as the beginning of the market's history. A live batch-candle route supplies available hourly records, and an archived per-market route supplies otherwise missing history. The collected total is 56,006 hourly candles across the 1,620 selected contracts; it is not an uninterrupted exchange-wide order-event history.
+
+\subsection{Completed-hour observation rule}
+The primary observation is the hourly candle ending exactly at 12:00 in the event city's local time. New York and Miami use the America/New\_York time zone, while Chicago uses America/Chicago. The latest eligible candle is first restricted to an endpoint no later than the cutoff; an exact completed-hour endpoint is then required. A stale earlier candle is not carried forward. The 09:00 and 15:00 observations use the same rule as descriptive sensitivity checks.
+
+Every accepted event requires valid bid and ask values for all six contracts, with prices between zero and one and the bid no greater than the ask. There is no interpolation or substitution of a later observation. For probability scoring, the event must subsequently have exactly one binary winning contract. Settled outcomes are kept separately from feature construction; they determine the score, not the forecast inputs. Final market volume, open interest and settlement price do not enter the probability vector.
+
+This construction is retrospective. Historical candles are acquired after their event dates, and the complete labelled dataset exists locally during processing. The separation of features, model fitting and later scoring is enforced by code and recorded hashes, not by physical inability to access the outcomes. The evaluation is consequently described as chronological held-out research rather than a prospective or externally preregistered trading trial.
+
+\subsection{Development, validation and later samples}
+All cities on a calendar date remain in the same chronological partition. Development covers 19 July--10 September 2026, validation covers 11--28 September, and the later test period covers 29 September--16 October. Splitting individual contracts at random would leak closely related event information across samples and is avoided.
+
+\paperTable{coverage}
+
+The noon specification retains 268 of 270 planned events. The two exclusions are Chicago on 12 September and 5 October, both because an exact completed-hour observation is missing. This leaves 162 development, 53 validation and 53 later events. The later events span 18 dates. Figure~\ref{fig:1} locates the missing panels rather than concealing them inside an aggregate count.
+
+\paperFig{1}
+
+At 09:00, 267 event panels are accepted; at 15:00, 265 are accepted. These are overlapping observations of the same event universe, not independent replications. Differences across hours combine a changing information horizon with modest changes in sample membership. The primary hour and chronological split remain fixed after these differences are observed.
+
+\subsection{Provenance and reproducibility}
+The source cache contains 521 stored snapshots. Each retains the URL, request start and response-received times, response information, the parsed JSON body and an observed hash of the original response bytes. A regenerated index adds hashes of the stored snapshot file and a canonical JSON representation of the body. The original wire bytes are not stored verbatim, so their recorded hash cannot be independently recomputed from the parsed object alone. The file and canonical-payload hashes serve separate reproducibility purposes.
+
+An offline reproduction verifies the saved inputs and model freeze before rebuilding outputs. Model fitting uses only the development outcomes, selection uses validation loss, and the final prediction file is hashed before later scoring. The freeze is an internal chronology record. It guards against silent replacement of the retained model and predictions; it does not transform retrospective analysis into prospective evidence.
+
+\chapterstart{Contract payoffs and order-book microstructure}\label{sec:microstructure}
+\subsection{Binary claims and settlement states}
+For ordinary binary resolution, let $A_i$ be the precisely defined event underlying contract $i$, and let $\omega$ be a resolution state. YES and NO payoffs, measured in dollars per unit-payout contract, satisfy
+\paperEq{1}
+The abbreviated market title is insufficient to determine $A_i$. Location, date, source agency, range endpoints and exceptional provisions must all agree before relationships across contracts can be asserted. Equation~\ref{eq:1} describes ordinary binary outcomes; an exceptional scalar or fair-price settlement requires the actual payout rule to be represented separately.
+
+As \src{kalshi2026c}{Kalshi (2026e)} specifies in the GLOBALTEMPERATURE terms, settlement follows the source's reported precision, and missing data can invoke a fair-price contingency. The engine therefore audits both integer-temperature partitions and a conservative set of full-precision boundary and between-boundary states. This audit does not infer that a noninteger gap settlement occurred. It tests whether a guarantee can be justified without an additional proof about the admissible source values.
+
+\paperTable{contract-audit}
+
+For all 276 historical and live events, the six ranges partition the model restricted to integer temperatures. When the declared comparison operators are evaluated at every finite endpoint, between successive endpoints and beyond the tails, the audit also finds an all-zero YES state. The resulting seven distinct rows consist of the six single-winner states and that additional row. If the applicable official source is proven to report only admissible integer values, some continuous probes could be unreachable. That narrower admissible domain has not been certified for every retained contract.
+
+The conservative state set may therefore reject opportunities that a more fully documented contract model would allow. This is a deliberate limit on certification, not a finding that the exchange's contracts are defective. Exceptional settlement remains a further contingency outside the ordinary temperature matrix. Historical scoring conditions on the observed single-winner universe and does not claim to model the probability of every exceptional outcome.
+
+\subsection{Complementary bids and asks}
+The order-book response supplies YES bids and NO bids as fixed-point dollar and quantity strings. Following the complementary relationship documented by \src{kalshi2026a}{Kalshi (2026a)}, the opposite-side bids imply the asks:
+\paperEq{2}
+Prices and quantities are parsed with Python's Decimal type. Repeated price levels are aggregated and prices are sorted explicitly. The implementation rejects non-finite values, negative quantities and invalid sides. Empty arrays are represented as unavailable liquidity, not as a zero-price trading opportunity.
+
+When both sides are available and uncrossed, the quoted spread and midpoint are
+\paperEq{3}
+The midpoint is a descriptive reference. It is not the price charged by the acquisition-cost routine. A missing bid or ask prevents the calculation of a two-sided spread, even when one side can still supply contracts for a particular purchase.
+
+\subsection{Displayed imbalance and weighted prices}
+Let $D_i^b$ and $D_i^a$ denote quantities at the best YES bid and implied YES ask. The displayed imbalance is
+\paperEq{4}
+It lies between minus one and one when the denominator is positive. A positive value indicates more displayed quantity at the best bid than at the best ask. The calculation omits deeper levels, hidden liquidity and all events between snapshots.
+
+A descriptive depth-weighted midpoint places more weight on the ask when bid depth is larger:
+\paperEq{5}
+Equal depths recover the ordinary midpoint. This expression is an algebraic summary, not an estimated efficient-price model. No claim that it predicts a later trade price is inferred from its definition. The empirical analysis retains the subsequent midpoint comparison as an exploratory diagnostic only.
+
+\subsection{Quantity-dependent acquisition costs}
+To acquire $q$ contracts, the engine consumes ascending ask levels until the requested quantity is reached. With $q_{i\ell}$ units taken at price $p_{i\ell}$, the purchase cost is
+\paperEq{6}
+Each fill quantity is bounded by the displayed depth at its level. If total depth is insufficient, the requested sweep is rejected and its shortfall recorded; the cost of a partial fill is not presented as the cost of a complete basket. Dividing $C_i(q)$ by $q$ gives the volume-weighted acquisition price. Its difference from the best ask measures displayed-depth slippage for that hypothetical sweep.
+
+The historical candles have no accompanying depth. They can support one-unit quote arithmetic but cannot run the same executable-size test. Even the live sweep is a static-book calculation: it does not establish that all displayed orders remain available while an incoming order is processed.
+
+\subsection{Fees, rounding and fill granularity}
+The current quadratic taker schedule and series multiplier are obtained from \src{kalshi2026b}{Kalshi (2026d)} and the retained series metadata. Before rounding, the order's fee is
+\paperEq{7}
+The audited series have a multiplier of one. The engine rejects unsupported fee types and missing multipliers rather than silently applying a generic fee. It models acquisition as a taker operation; rebates associated with a separate market-making strategy are not assumed.
+
+The \src{kalshi2026e}{Kalshi (2026c)} fee-rounding documentation distinguishes the trade-fee precision from the balance grid. The recurrence below states the implemented order-level calculation, with $H_0=0$:
+\paperEq{8}
+Here $f_\ell^{\rm model}$ is the raw fee of fill $\ell$, $u_\ell$ is its signed purchase revenue, and $\lfloor\cdot\rfloor_\delta$ rounds down to the balance grid. Direct-member and non-direct-member scenarios use $\delta=0.0001$ and $\delta=0.01$ dollars respectively. The carried accumulator prevents treating each balance adjustment as unrelated to earlier fills of the same order. The rounded order fee $F_i(q_i)$ is the sum of the fill net fees.
+
+\paperTable{fees}
+
+A displayed price level can aggregate several counterparties and therefore need not correspond to one execution fill. The default sweep treats a consumed level as a fill for the fee scenario; the engine can fragment it into smaller assumed fills. Neither choice reconstructs undisclosed counterparty matching. The historical fee calculation is also a current-schedule scenario, because the complete applicable fee and balance regime has not been certified for every historical date.
+
+\chapterstart{Payoff constraints and arbitrage screening}\label{sec:arbitrage}
+\subsection{Conditional basket relationships}
+For a verified mutually exclusive, exhaustive collection of unit-payout outcomes, a frictionless probability vector can lie within the quoted intervals only if
+\paperEq{9}
+The condition is a useful quote-coherence check. It depends on a valid partition and does not assert that a trader can transact at every quote. If all YES asks sum to less than one, an equal-quantity YES basket has a positive gross ordinary-resolution margin. If all YES bids sum to more than one, the complementary equal-quantity NO basket is the analogous long-only construction. With $K$ ordinary single-winner outcomes, one unit of every NO claim pays $K-1$ dollars.
+
+The engine evaluates both sides and then subtracts the quantity-dependent costs and fees. For the temperature study, these equal-basket summaries are explicitly conditional on integer, single-winner resolution. A non-exhaustive state set or exceptional payout cannot be repaired by merely renormalising the prices.
+
+\needspace{145pt}\subsection{Statewise net payoff}
+Let $\mathbf q$ contain long positions and let each position's payoff be represented across the included states. The portfolio's net payoff is
+\paperEq{10}
+A strictly positive minimum of $\Pi(\omega;\mathbf q)$ over the supplied states is a structural candidate within that model. It is not an unconditional certificate if states are missing, and it does not establish that the quantities were filled. Conversely, a model probability can assign a positive expectation to a portfolio whose minimum payoff is negative. That portfolio is a risky value trade rather than a statewise arbitrage.
+
+As \src{boyd2004}{Boyd and Vandenberghe (2004)} explain in \textit{Convex optimization}, linear constraints can express a feasible portfolio under resource and payoff bounds. The implemented screen uses a state-by-position matrix $\mathbf A$, fee-adjusted unit costs $\mathbf c$, available-depth bounds $\mathbf d$ and budget $B$:
+\paperEq{11}
+The matrix includes YES and NO positions for each contract. Their rows are built from the same underlying temperature state rather than treating each claim's outcome as independent. The zero portfolio is feasible, so zero is a legitimate optimum when no positive lowest-state payoff can be supported. A solver returning zero is not an optimisation failure.
+
+\subsection{Relaxation, rechecking and reporting gates}
+The live implementation uses top-of-book unit prices and raw fee slopes in Equation~\ref{eq:11}, with a budget of 100 dollars. This is a continuous screening relaxation. It bounds each position by displayed top-level depth, floors the resulting quantities to the 0.01-contract grid, then recomputes purchase costs, rounded fees and all state payoffs. A positive relaxed result would not be reported as surviving unless the rechecked portfolio also remained positive.
+
+The live sample additionally lacks exchange timestamps for individual books. A two-second request-span threshold is retained as a strict observation screen, but a fast response would still not prove atomic cross-contract prices. A batch response can collect several books without guaranteeing that every book reflects the same exchange instant. Settlement uncertainty and the absence of actual simultaneous fills remain separate reasons to withhold an executable-arbitrage label.
+
+This separation also prevents circular use of YES and NO positions. Complementary exposures must be priced through the observed opposite-side liquidity and represented in one state matrix. They are not treated as independent risk-free resources. The general optimiser accepts a supplied payoff matrix; the empirical rule adapter remains limited to the three audited temperature series.
+
+\chapterstart{Probability modelling and validation}\label{sec:probability}
+\subsection{Market-derived probability baseline}
+For each accepted event, positive midpoints are normalised using a floor $\epsilon=0.0001$:
+\paperEq{12}
+The floor avoids a zero probability and an undefined logarithmic score. It is applied before normalisation and is held fixed across samples. The baseline conditions on the observed six-outcome single-winner event universe. It is not a forecast for missing-data contingencies or scalar settlements.
+
+Normalisation removes the midpoint sum's deviation from one for scoring purposes. It does not remove that deviation from the separate quote-coherence audit. Keeping the two calculations separate is essential: forcing a statistical vector onto the simplex should not erase an observed spread, change a purchase price or establish a contractual partition.
+
+\subsection{Temperature calibration and selection}
+As \src{guo2017}{Guo et al. (2017)} describe in \textit{On calibration of modern neural networks}, a temperature parameter can alter the concentration of a probability vector. The project applies that transformation to the logarithms of the market-derived baseline:
+\paperEq{13}
+At $T=1$, the transformation is the identity. A temperature above one makes the distribution less concentrated, while a temperature below one sharpens it. Outcome ordering is unchanged. No neural network is fitted, and the neural-network performance findings in Guo et al. are not assumed to transfer to prediction-market prices.
+
+The development fit minimises mean noon logarithmic loss over $0.25\leq T\leq4$, using a bounded optimisation in log temperature. The fitted candidate is then compared with the unchanged baseline on validation loss. The baseline wins ties, including the implementation's numerical tolerance. Only the winning method is designated as selected. A later comparison of the rejected candidate is supplementary and cannot revise the recorded selection.
+
+\needspace{145pt}\subsection{Proper scores and expected-value diagnostics}
+For $N$ events with observed winner $y_e$, the logarithmic loss is
+\paperEq{14}
+Natural logarithms give nats per event, and lower loss is better. A forecast that assigns very low probability to the realised winner receives a large penalty. As \src{brier1950}{Brier (1950)} proposed in \textit{Verification of forecasts expressed in terms of probability}, squared probability errors provide another forecast-verification criterion. The present multiclass form sums over the outcomes within each event:
+\paperEq{15}
+This summed Brier convention has a range from zero to two for a categorical outcome. It is not divided by the number of contracts. The event remains the unit of observation; the six outcomes are jointly constrained and cannot be counted as six independent forecasts.
+
+To connect a probability estimate to a trading hypothesis, the expected net payoff of buying a YES claim is
+\paperEq{16}
+For a NO claim, $\widehat p_i$ is replaced by $1-\widehat p_i$. Positive expected payoff still depends on the estimated probability and permits losses in individual states. The exploratory historical value screen chooses at most one claim per later noon event when estimated one-contract edge exceeds two cents under the raw current-fee scenario. It is a diagnostic using candle asks, not an execution backtest.
+
+\subsection{Paired date-block uncertainty}
+All cities on a date can share weather conditions, market activity or information patterns. The uncertainty calculation first pairs model and baseline losses within each event, then gives equal weight to each calendar date:
+\paperEq{17}
+Negative values favour the model. As \src{kunsch1989}{Künsch (1989)} develops in \textit{The jackknife and the bootstrap for general stationary observations}, blocks can preserve local dependence when resampling dependent observations. Here a moving-block bootstrap resamples consecutive date means, concatenates sampled blocks and truncates to the original 18-date length. It uses 1,999 draws and percentile limits at 2.5 and 97.5 percent.
+
+Three-day blocks are primary; one- and five-day blocks are sensitivity checks. With only 18 later dates, longer blocks leave few distinct stretches of history and seasonal change may undermine stationarity. The resulting intervals should therefore be read as small-sample sensitivity evidence, not assured nominal coverage. Equal-date weighting also differs slightly from equal-event weighting because one later date is missing Chicago.
+
+\chapterstart{Empirical findings}\label{sec:results}
+\subsection{Historical spreads and conditional basket gaps}
+Figure~\ref{fig:2} summarises quoted spreads for the accepted noon panels. Each spread compares the bid and ask summaries at a completed hourly endpoint. It cannot reveal the size available at that spread or the order in which constituent quotes updated.
+
+\paperFig{2}
+
+The 268 accepted events generate 536 basket-side checks: one YES basket and one NO basket per event. Five YES baskets and 29 NO baskets have a positive gross ordinary-resolution margin. These 34 positive checks happen to occur in 34 distinct events, but the audit denominator is the number of side checks. Table~\ref{tab:historical} keeps the two sides separate.
+
+\paperTable{historical}
+
+The largest gross margin is two cents for a YES basket and four cents for a NO basket. After the current direct-member fee scenario, no basket remains positive. The closest NO result is still negative by 0.11 cents per unit basket, while the maximum net YES result is negative by 2.13 cents. Thus the fee adjustment is material even before adding uncertainty about contemporaneous liquidity and the applicable historical fee regime.
+
+\paperFig{3}
+
+Figure~\ref{fig:3} illustrates why a gross discrepancy count cannot be presented as an arbitrage hit rate. It omits actual fills, depth and the admissible-state qualification unless those conditions are stated separately. The finding is that the retained quote sample contains small conditional discrepancies that do not survive the stated cost scenario. It is not a proof that every opportunity in these markets was absent.
+
+\subsection{Calibration fit and model rejection}
+The development fit gives $T=1.034401$, close to the identity. Development logarithmic loss falls from 0.956481 to 0.956092, a small improvement. On validation, however, candidate loss is 0.819043 against 0.813803 for the baseline. The pre-established selection rule therefore retains $T=1$.
+
+\paperTable{scores}
+
+On the 53 later noon events, baseline log loss is 0.718589 and Brier score is 0.408273. The rejected candidate produces 0.722152 and 0.409355 respectively. Figure~\ref{fig:4} displays both scores without interpreting the rejected candidate as the chosen forecast. The selected model's score difference from the baseline is exactly zero in mathematical terms; negligible floating-point differences are not evidence of performance improvement.
+
+\paperFig{4}
+
+The rejection is substantively useful. A more complex label does not imply a better forecast when the input is already the market's own probability-like vector. Temperature scaling can correct only a common concentration pattern. It cannot introduce meteorological information, resolve city-specific biases or repair the outcome definition. The observed failure limits this particular adjustment, rather than ruling out all probability models.
+
+\subsection{Reliability and uncertainty}
+The pooled reliability plot in Figure~\ref{fig:5} groups later predicted probabilities and compares them with observed binary frequencies. It is descriptive because probabilities within an event sum to one and the contracts share a winner. Sparse high-probability bins and a short date span can make the curve unstable. The plot is not an independent-bin test of calibration.
+
+\paperFig{5}
+
+The equal-date mean candidate-minus-baseline differences at noon are 0.003717 for log loss and 0.001198 for the Brier score. They differ slightly from subtracting the event-weighted scores in Table~\ref{tab:scores}, because dates are equally weighted for inference. Table~\ref{tab:intervals} reports the paired block intervals.
+
+\paperTable{intervals}
+
+For log loss, the primary three-day interval runs from $-0.000564$ to $0.008773$. The Brier interval runs from $-0.000555$ to $0.003494$. Both include zero. One- and five-day alternatives also include zero at noon, as Figure~\ref{fig:10} shows. These intervals do not rescue the rejected model: the selection decision was already made on validation, and lack of a statistically clear later difference is not evidence of useful expected trading profit.
+
+\paperFig{10}
+
+\subsection{Observation-time and city sensitivity}
+Later baseline log loss decreases from 0.879706 at 09:00 to 0.718589 at noon and 0.272615 at 15:00. The temperature outcome is more nearly realised later in the day, so the forecasting problem changes with the observation time. The accepted event sets also differ slightly. Table~\ref{tab:timing} therefore reports sensitivity rather than an estimated causal effect of waiting.
+
+\paperTable{timing}
+
+The noon-fitted candidate is transferred to these hours without refitting. It performs slightly worse on both later scores at all three hours. City-specific later results in Table~\ref{tab:cities} likewise favour the baseline in the reported averages. The small numbers of dates and cities prevent treating these comparisons as a broad survey of market calibration.
+
+\paperTable{cities}
+
+No later noon event passes the exploratory two-cent model-edge threshold. The diagnostic therefore contains zero hypothetical selections and no mean selected-trade payoff. A recorded total scenario payoff of zero reflects the empty set of selections; it is not a zero-risk strategy or an achieved return. The probability analysis provides no evidence of profitable model-based trading in this sample.
+
+\subsection{Live liquidity and statewise screening}
+The live collection runs from 20:29:46.177 to 20:32:32.296 UTC on 17 October 2026. Twenty batch responses cover 36 contracts in six events. The responses have 20 distinct canonical payload hashes, showing that the retained batches are not identical copies. This does not establish how many order events occurred between requests.
+
+\paperTable{live}
+
+Of the 720 individual market books, 406 are two-sided and 314 are one-sided. The median spread among two-sided books is one cent. The median HTTP request span is 5.307 seconds, exceeding the two-second observation screen, but this span measures collection uncertainty and includes network and service effects. It must not be described as exchange execution latency.
+
+Figure~\ref{fig:6} shows acquisition costs for the final observed contract whose midpoint is closest to 0.50. This deterministic descriptive selection avoids choosing the contract for a favourable future return. The cost curve rises as displayed levels are consumed. A fee-adjusted curve can be materially higher than the best ask even before unobserved execution slippage.
+
+\paperFig{6}
+
+The 720 basket checks arise from six events, 20 rounds, two sides and three quantities: one, ten and one hundred contracts per leg. Of these checks, 378 have enough displayed depth and show no positive net gap; 342 fail because at least one leg lacks the requested quantity. These counts are distinct from the coincidentally equal number of individual book observations. Forty-six event-round observations have complete two-sided books and support the general statewise programme. None yields a positive relaxed or rounded-and-rechecked lowest-state payoff.
+
+\subsection{Exploratory imbalance diagnostic}
+There are 385 usable pairs of snapshot imbalance and next observed midpoint change. Their pooled correlation is 0.0355. Figure~\ref{fig:7} retains the concentration of observations at unchanged midpoints and the variation across contracts rather than reducing the diagnostic to a fitted trading rule.
+
+\paperFig{7}
+
+These pairs repeatedly observe a small set of contracts over a few minutes. They are neither independent opportunities nor a representative time sample. No predictive model or significance claim is inferred from the correlation. A stronger study requires a longer prospective record with exchange-timestamped updates and explicit missing-data rules.
+
+\chapterstart{Synthetic validation and execution risk}\label{sec:synthetic}
+\subsection{Known-truth screening mechanisms}
+Synthetic validation isolates logical behaviour from the absence of empirical opportunities. Each of 500 probability draws is reused across six mechanisms. The probabilities are drawn from a six-dimensional Dirichlet distribution with concentration eight and shifted away from zero. Coherent asks add one cent to each component. A true supplied-state gap uses asks equal to 90 percent of the probability vector, while a deliberately small gross gap uses 99.5 percent and is removed by fees.
+
+Other mechanisms hold the attractive basket arithmetic fixed but reduce depth below the requested ten contracts, impose a five-second observation span, or activate the exceptional-settlement block. These tests use a supplied exhaustive single-winner state set and known labels. They do not inherit the empirical temperature contract's unresolved state-domain qualification.
+
+\paperTable{synthetic}
+\paperFig{8}
+
+All 3,000 scenario evaluations produce the expected classification in this designed family. The count represents 500 paired probability draws across six conditions, not 3,000 independent markets. Perfect accuracy within constructed cases is evidence that these specified rules are implemented consistently. It is not a measure of sensitivity to every possible real contract error or an estimate of profitable trading frequency.
+
+\subsection{Incomplete multi-leg execution}
+A second experiment studies a six-leg basket whose asks are each 0.15 dollars. Its gross cost is 0.90 dollars and its raw quadratic fee is 0.05355 dollars. If all legs fill and exactly one pays one dollar, the terminal margin is 0.04645 dollars before any added entry-cost stress. The terminal winning leg is chosen uniformly, independently of the assumed fill process.
+
+For a common per-leg fill probability $\rho$ and $K$ independent legs, the probability of a complete basket is
+\paperEq{18}
+This is a synthetic independence assumption, not an empirical fill estimate. At $\rho=0.95$ and $K=6$, the analytical complete-fill probability is about 73.5 percent. A high individual-leg fill probability therefore need not imply near-certain basket completion.
+
+The simulation uses 20,000 draws at each of five fill probabilities. The same draws are reused across four additional entry-cost settings, giving 20 scenario cells and 100,000 distinct fill draws. The added cost is charged per filled leg and is treated as an extra penalty; the raw fee remains calculated at the base ask. This is an explicit cost stress, not a reconstruction of repriced exchange orders.
+
+\paperTable{stress}
+
+With a 95 percent per-leg fill probability and no extra cost, the simulated mean payoff is 0.0434 dollars, while 5.14 percent of trials lose money. Adding one cent per filled leg makes the mean negative and raises the simulated loss rate to 78.20 percent. At certain fill, the base basket earns the constructed 0.04645-dollar margin, but the one-cent penalty makes every trial lose 0.01355 dollars. The negative result follows from six additional cents exceeding the original margin.
+
+\paperFig{9}
+
+Figure~\ref{fig:9} illustrates that execution risk and expected value answer different questions. Incomplete baskets can lose even when their average payoff is positive. The experiment excludes correlated fills, queue priority, dynamic hedging, cancellation races, inventory netting, funding costs and settlement exceptions. It demonstrates a mechanism rather than forecasting a realised trading distribution.
+
+\chapterstart{Discussion, research reflections and limitations}\label{sec:discussion}
+\subsection{What the combined evidence establishes}
+The historical sample reveals small conditional quote gaps that fail the current-fee scenario. The live pilot shows how missing sides, depth and observation timing constrain a scanner. The synthetic cases verify selected logic under deliberately sufficient payoff assumptions. These components answer different questions and cannot be pooled into a profitability estimate.
+
+No surviving candidate is evidence about this sample, not proof of market efficiency. Other contracts, faster observations or different costs could change the result. A future positive screen would still require complete state coverage, adequate size and execution evidence.
+
+The calibration failure supports retaining the baseline, not a claim of perfect market calibration. External weather forecasts or richer models require a new development and validation exercise; the present later scores cannot become a model-selection dataset without changing their evidential status.
+
+\subsection{Acquisition failures and implemented corrections}
+The initial batch-candle request used 80 tickers across eight days and failed against the endpoint's 10,000-candle potential-grid cap. The limit concerns possible ticker-time combinations, not just the number of nonempty observations. Reducing batches to 32 tickers gives at most 6,144 hourly combinations over eight days. This repaired collection while preserving the planned event window.
+
+Archived and current candle responses also used different field names for decimal-dollar values. A magnitude-based guess could confuse a dollar value with cents. The adapter instead recognises the two documented schemas explicitly and requires a string-valued dollar field. Missing archived records are routed through the historical endpoint rather than treated as evidence that the market never existed. These changes address data representation and retention, not the model's fitted outcome relationships.
+
+A concurrent append left one source snapshot absent from the original manifest. The raw snapshot itself remained intact. Rebuilding the index by enumerating stored source files recovered a complete 521-file register, with snapshot and canonical-payload hashes. This correction repairs the current audit trail; it does not claim that the original parallel append mechanism was made transactional. A future collector should serialize manifest writes or use an atomic indexed store.
+
+\subsection{Contract and model assumptions that failed}
+The initial intuition that six integer-labelled ranges automatically establish a guaranteed one-dollar YES basket did not survive the contract audit. The full-precision comparison model permits an additional all-zero YES row, and the exceptional settlement clause remains outside the simple binary partition. The mitigation is to preserve integer-resolution basket arithmetic as conditional, expand the ordinary state matrix and withhold an unconditional certificate. The remaining limitation is uncertainty about the exact admissible domain of each source report and the exceptional payout set.
+
+The fitted calibration candidate also failed its validation criterion. It marginally improved development loss but worsened validation loss. The implemented mitigation was rejection, not an expanded search over models on the later sample. The final selected forecast remains the baseline. Retaining the rejected candidate in explicitly supplementary tables makes the failure inspectable without changing the selection rule.
+
+One-sided books exposed a presentation issue during browser review: an absent side could produce an infinite displayed spread if an empty array was reduced numerically. The explorer now labels the spread unavailable and defaults to a two-sided contract. A separate plotting-library title change initially omitted scientific axis labels; explicit title objects and adjusted camera distance restored legibility. These presentation fixes did not alter the frozen empirical predictions or numerical analyses.
+
+\subsection{Verification and residual risk}
+Table~\ref{tab:validation} records the completed checks. The analytical tests cover complementary quotes, decimal costs, fee rounding, insufficient liquidity, omitted states, optimisation, calibration and dependence-aware scoring helpers. They exercise economically meaningful failure cases rather than only checking whether scripts return an output.
+
+\paperTable{validation}
+
+Verification does not establish permanent endpoint compatibility, complete settlement coverage or actual fills. The scanner supports the audited series and rejects unsupported fee metadata. Historical book reconstruction, queue estimation, order submission and management after partial execution remain outside its scope.
+
+The settlement filter further limits external validity. Excluding other resolution types conditions scoring on a single-winner universe. A broader project should model those contingencies or declare its admissible population before outcomes are observed. Normalised probability scores cannot certify exceptional settlement behaviour.
+
+\subsection{Data access and publication status}\label{sec:rights}
+The \src{kalshi2026d}{Kalshi (2026b)} developer agreement distinguishes access from permitted use. Its provisions restrict API-data collection and storage to facilitating a member's own trading, restrict sharing without written authorisation, and require approval for specified public disclosures. The ability to retrieve an unauthenticated response is therefore not treated as an open-data licence or as proof that research retention and publication are authorised.
+
+The retained cache and empirical outputs are private working material, with permission for their intended retention and public release unresolved. This paper does not represent written authorisation as obtained. An eventual public package requires a documented rights decision covering the paper, empirical aggregates, graph payloads and source data. Original code and synthetic demonstrations can be prepared separately, but that separation does not by itself clear every proposed public use.
+
+\subsection{A stronger subsequent research design}
+A prospective extension should freeze the scanner and inclusion rules before collecting a longer permitted sample. Exchange-timestamped updates would support event-based microstructure analysis; execution records or a validated queue model would be needed for fill estimates. REST response spans cannot supply that evidence.
+
+External forecasts would require verified issue times, location definitions and settlement-source compatibility. A forecast published after a decision cannot enter its earlier information set. Model complexity should be chosen on new validation data, with later observations reserved for final evaluation. These changes address the limits exposed by this study.
+
+\chapterstart{Conclusion}\label{sec:conclusion}
+This study builds a reproducible prediction-market research engine around three connected questions: what contracts pay, what positions cost to acquire, and how well estimated probabilities transfer to later outcomes. It makes the distinctions operational through explicit payoff states, depth sweeps, fee calculations, chronological model selection and synthetic execution tests.
+
+In 536 historical conditional basket-side checks, 34 gross discrepancies are positive and none survives the stated current-fee scenario. The short live pilot produces no positive cost-adjusted basket or statewise portfolio candidate. The calibration parameter fitted on development data fails validation, so the final forecast retains the market-derived baseline. These findings provide no evidence of realised trading profitability and do not imply that every prediction market is efficient.
+
+The practical contribution is a disciplined method for rejecting unsupported opportunities and preserving the reasons for rejection. Missing depth, uncertain observation timing, incomplete payoff coverage, weak probability improvements and partial execution each require different remedies. Keeping those mechanisms visible produces an auditable foundation for future market-microstructure and probability research.

@@ -1,0 +1,15 @@
+id,verification_url,relevance_and_limits
+avellaneda2008,https://math.nyu.edu/inmemoriam/avellaneda/HighFrequencyTrading.pdf,Inventory and execution are separate from an observed probability discrepancy. The project does not estimate their market-making model.
+boyd2004,https://web.stanford.edu/~boyd/cvxbook/,Linear constraints support a finite-state payoff optimisation; supplied payoff states and cost assumptions still determine validity.
+brier1950,https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml,Multiclass Brier score; specify that scores sum across outcomes rather than averaging across outcomes.
+cont2014,https://academic.oup.com/jfec/article-abstract/12/1/47/816163,Motivates depth and imbalance; snapshot queue imbalance is not their event-based order-flow imbalance.
+glosten1985,https://business.columbia.edu/faculty/research/bid-ask-and-transaction-prices-specialist-market-heterogeneously-informed-traders,Spreads can compensate for information asymmetry; a midpoint discrepancy is not a realizable return.
+gneiting2007,https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf,"Proper-score evaluation of full predictive distributions, separately from trading profit."
+guo2017,https://proceedings.mlr.press/v70/guo17a.html,Temperature scaling is adapted to log market-derived probabilities. No neural network is fitted and their empirical results do not transfer automatically.
+hasbrouck2007,https://academic.oup.com/book/52241,"Observed prices, depth and execution costs represent different objects."
+kunsch1989,https://people.math.ethz.ch/~hkuensch/papers/,"Fixed-length moving-block bootstrap by date; a short, changing weather sample need not meet stationary asymptotics."
+wolfers2006,https://www.nber.org/papers/w12200,Interpreting prices as probabilities depends on assumptions about market participants and preferences.
+kalshi2026a,https://docs.kalshi.com/,"Specific source snapshots cover public GET endpoints, historical routing, order-book complements and fee rounding."
+kalshi2026b,https://kalshi.com/docs/kalshi-fee-schedule.pdf,General quadratic formula and multipliers; current fee-rounding documentation resolves implementation detail. Historical fee scenarios are not certified fees.
+kalshi2026c,https://assets.kalshi.com/contract_terms/GLOBALTEMPERATURE.pdf,Full reported precision and fair-value fallback prevent an unconditional integer-partition guarantee.
+kalshi2026d,https://assets.kalshi.com/Kalshi-Developer-Agreement.pdf,"API-data storage, sharing and publication restrictions; public-release rights unresolved."
