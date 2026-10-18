@@ -1,5 +1,5 @@
 {
-  "stage": "approved_public_release",
+  "stage": "published",
   "files": [
     {
       "path": ".github/workflows/research-checks.yml",
@@ -103,8 +103,8 @@
     },
     {
       "path": "docs/release-status.json",
-      "bytes": 629,
-      "sha256": "5d56f536a881a79105bae0301686727d866ba088b9d1ee1954f27f93f5fe84f6"
+      "bytes": 1746,
+      "sha256": "a11966876cb7086f6955e7fa81dc5d58b87c338a2724b4d1cffeeaddfb2b6bc5"
     },
     {
       "path": "docs/research-reflections.md",
@@ -288,8 +288,8 @@
     },
     {
       "path": "outputs/validation/release-checks.json",
-      "bytes": 788,
-      "sha256": "ad698bf8c2a4c34507347152b9bb58e7bb61449e68b81caa38c50d2c8d7ae044"
+      "bytes": 777,
+      "sha256": "440950b96a1147195ea6055617b4867d6fe431dde47b008932301cfe808a1670"
     },
     {
       "path": "outputs/validation/source-snapshot-index.json",
@@ -843,8 +843,8 @@
     },
     {
       "path": "scripts/verify_release.py",
-      "bytes": 5607,
-      "sha256": "fffdbef90a0160982d9a38bbd5e88e72350955a026a710a4402cb7e802d554af"
+      "bytes": 5610,
+      "sha256": "809cfed5116578056c91420d11b24bf7fec434cecbf0660b1cd27e7d513162a9"
     },
     {
       "path": "tests/test_engine.py",

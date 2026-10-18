@@ -29,6 +29,6 @@
   "probability_vectors": 268,
   "frozen_implementation_hashes_verified": 3,
   "full_source_cache_included": false,
-  "real_browser_review_completed": false,
-  "publication_status": "approved_public_release"
+  "checks_include_browser_rendering": false,
+  "publication_status": "published"
 }

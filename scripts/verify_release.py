@@ -94,7 +94,7 @@ def main():
             'separate_social_thumbnails':thumbs,'final_paper_pages':39,'final_paper_unchanged':True,
             'notebooks':len(books),'executed_cells':cells,'book_observations':720,'probability_vectors':268,
             'frozen_implementation_hashes_verified':len(frozen['implementation_hashes']),
-            'full_source_cache_included':(ROOT/'private-archive/Complete-Research-Snapshot.zip').is_file(),'real_browser_review_completed':False,
+            'full_source_cache_included':(ROOT/'private-archive/Complete-Research-Snapshot.zip').is_file(),'checks_include_browser_rendering':False,
             'publication_status':json.loads((ROOT/'docs/release-status.json').read_text())['stage']}
     out=ROOT/'outputs/validation/release-checks.json';out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(result,indent=2))
     print(json.dumps(result,indent=2))
