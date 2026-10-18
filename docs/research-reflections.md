@@ -35,3 +35,7 @@ One-sided books originally produced an infinite spread in the explorer display. 
 ## Publication is a separate decision
 
 Publicly readable API routes do not grant general redistribution rights. The prepared presentation, paper and selected explorer payload remain subject to the publication scope recorded in `DATA_AND_SOFTWARE_RIGHTS.md`.
+
+## Browser graphics support
+
+The deployed-site review found that a browser without WebGL displayed Plotly's unsupported-graphics panel while the 2D chart and calculations still worked. The loader now checks graphics support and substitutes a clearly labelled static reference in the 3D panel when necessary. Controls, the linked 2D chart and CSV export remain interactive. The static reference is explicitly identified as independent of the selected controls, avoiding an incorrect impression that it represents the current scenario. Interactive 3D remains available in browsers with WebGL support.

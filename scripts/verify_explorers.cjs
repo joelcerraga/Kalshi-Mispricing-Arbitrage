@@ -42,6 +42,13 @@ async function main(){
   check('Depth sweep arithmetic',Math.abs(f.cost([[.4,2],[.5,8]],5).vwap-.46)<1e-12);
   check('Insufficient depth rejected',f.cost([[.4,2]],3)===null);
   check('Ready state after transitions',sandbox.researchReady===true);
+  sandbox.researchWebGLAvailable=false;
+  await f.render();
+  check('WebGL fallback explicitly labelled',el('plot3d').textContent.includes('Static reference'));
+  check('WebGL fallback preserves interactive 2D',el('plot2d').layout.title.text.startsWith('6 equal-price legs'));
+  el('legs').value='3';await f.render();
+  check('WebGL fallback responds to controls',el('plot2d').layout.title.text.startsWith('3 equal-price legs'));
+  await f.changeMode('book');check('WebGL fallback changes reference by mode',el('plot3d').children[0].src.endsWith('liquidity.svg'));
   const report={status:'passed',checks:checks.length,method:'Node.js document/plot stubs; no real-browser rendering',results:checks};
   fs.writeFileSync(path.join(root,'outputs/validation/explorer-logic-checks.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({status:report.status,checks:report.checks,method:report.method},null,2));
 }

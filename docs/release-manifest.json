@@ -33,8 +33,8 @@
     },
     {
       "path": "assets/explorer.js",
-      "bytes": 12137,
-      "sha256": "90d2c6eea04691880c4c98a346a06d79379259a85fb9dab3fee14e73308698ea"
+      "bytes": 12916,
+      "sha256": "7ec021382f34632ccae02ae5d106fc8f93dfa3cde5afc7e051713d044f30808e"
     },
     {
       "path": "assets/favicon.svg",
@@ -43,8 +43,8 @@
     },
     {
       "path": "assets/load-explorer.js",
-      "bytes": 1283,
-      "sha256": "2781f67e1707dc7336d82af604757e3bda5b4487a83aae7704af22e3feff5d91"
+      "bytes": 1920,
+      "sha256": "be92a967b29114a03b528b4c4cd7f1f03d3910475c91f6ae79288b6ed7ebb775"
     },
     {
       "path": "assets/previews/execution.svg",
@@ -63,8 +63,8 @@
     },
     {
       "path": "assets/research.css",
-      "bytes": 2702,
-      "sha256": "c18201aa92f6800e985a6d029858492b9aa9bf0d1d4d71a2bdb17f26f672a3d3"
+      "bytes": 3060,
+      "sha256": "3e0daf753d0d17829abbf0ea593685e9fa51c2dec69a4b00dbb7fa6d8f19403c"
     },
     {
       "path": "assets/site.css",
@@ -108,8 +108,8 @@
     },
     {
       "path": "docs/research-reflections.md",
-      "bytes": 2823,
-      "sha256": "f774241033c8218c8e4232a098eae58dc3370a9776bd1ed049407b9f2ce15870"
+      "bytes": 3423,
+      "sha256": "72ef1ecf19c5035b0b37a5bca33d41f5d169697ecf33e25d512459ee2800c996"
     },
     {
       "path": "explorers/execution/index.html",
@@ -268,8 +268,8 @@
     },
     {
       "path": "outputs/validation/explorer-logic-checks.json",
-      "bytes": 2249,
-      "sha256": "99a7ecd1222b98257641a2718dd43b92db15d002fdff2669f317061b3dd4ce94"
+      "bytes": 2605,
+      "sha256": "ed78a7006e20869e88969884449fef93a5a49a6607cdd1f5b46fd5df9f0a2da2"
     },
     {
       "path": "outputs/validation/notebook-execution.json",
@@ -838,8 +838,8 @@
     },
     {
       "path": "scripts/verify_explorers.cjs",
-      "bytes": 4747,
-      "sha256": "1c65710f8cee9afbda6d98492c0b4816c8f954c983375d07b96ce02cec54eeb8"
+      "bytes": 5312,
+      "sha256": "ec90a0cc9c11833cd7897730a47561170a45902b8fbf972db29d9d47e8f96fcb"
     },
     {
       "path": "scripts/verify_release.py",

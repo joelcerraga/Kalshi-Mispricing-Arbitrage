@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checks": 28,
+  "checks": 32,
   "method": "Node.js document/plot stubs; no real-browser rendering",
   "results": [
     {
@@ -113,6 +113,22 @@
     },
     {
       "name": "Ready state after transitions",
+      "passed": true
+    },
+    {
+      "name": "WebGL fallback explicitly labelled",
+      "passed": true
+    },
+    {
+      "name": "WebGL fallback preserves interactive 2D",
+      "passed": true
+    },
+    {
+      "name": "WebGL fallback responds to controls",
+      "passed": true
+    },
+    {
+      "name": "WebGL fallback changes reference by mode",
       "passed": true
     }
   ]
